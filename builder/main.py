@@ -16,7 +16,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--top-n", type=int, default=int(os.getenv("TOP_N", "50")))
     ap.add_argument("--max-candidates", type=int, default=int(os.getenv("MAX_CANDIDATES", "0")))
-    ap.add_argument("--mihomo", default=os.getenv("MIHOMO_BIN", "mihomo"))
+    ap.add_argument("--mihomo", default=os.getenv("MIHOMO_BIN", "./mihomo"))
     ap.add_argument("--index-url", default=DEFAULT_INDEX)
     ap.add_argument("--benchmark-url", default=os.getenv(
         "BENCHMARK_URL",

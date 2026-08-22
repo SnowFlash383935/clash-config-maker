@@ -14,17 +14,17 @@ jobs:
     timeout-minutes: 90
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Install Python
+    - name: Install Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+    - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Mihomo
+    - name: Install Mihomo
         shell: bash
         run: |
             set -euo pipefail
@@ -39,15 +39,48 @@ jobs:
         
             ./mihomo -v
     
-      - name: Build
+    - name: Build
         env:
             TOP_N: "50"
         run: python -m builder
 
-      - name: Publish generated config
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/
-          git diff --cached --quiet || git commit -m "chore: update generated Clash config"
-          git push
+    - name: Publish dist branch
+      shell: bash
+      run: |
+        set -euo pipefail
+    
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    
+        # Save generated artifacts outside the Git working tree.
+        mkdir -p /tmp/generated
+        cp -R dist/. /tmp/generated/
+    
+        # Check whether dist branch exists on remote.
+        if git ls-remote --exit-code --heads origin dist >/dev/null 2>&1; then
+          echo "dist branch exists"
+          git fetch origin dist
+          git worktree add /tmp/dist-branch origin/dist
+        else
+          echo "dist branch does not exist; creating it"
+          git worktree add --orphan /tmp/dist-branch
+        fi
+    
+        cd /tmp/dist-branch
+    
+        # Remove everything from the dist branch.
+        git rm -rf . >/dev/null 2>&1 || true
+    
+        # Copy fresh generated artifacts.
+        cp -R /tmp/generated/. .
+    
+        git add -A
+    
+        if git diff --cached --quiet; then
+          echo "No changes in generated config."
+          exit 0
+        fi
+    
+        git commit -m "chore: update generated config"
+        git push origin HEAD:dist
+    
