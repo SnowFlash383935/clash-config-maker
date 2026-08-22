@@ -24,20 +24,20 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-    - name: Install Mihomo
-      shell: bash
-      run: |
-        set -euo pipefail
-    
-        MIHOMO_VERSION="v1.19.30"
-        MIHOMO_FILE="mihomo-linux-amd64-v3-v1.19.30.gz"
-        MIHOMO_URL="https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/${MIHOMO_FILE}"
-    
-        curl -fL "$MIHOMO_URL" -o mihomo.gz
-        gunzip mihomo.gz
-        chmod +x mihomo
-    
-        ./mihomo -v
+      - name: Install Mihomo
+          shell: bash
+          run: |
+            set -euo pipefail
+        
+            MIHOMO_VERSION="v1.19.30"
+            MIHOMO_FILE="mihomo-linux-amd64-v3-v1.19.30.gz"
+            MIHOMO_URL="https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/${MIHOMO_FILE}"
+        
+            curl -fL "$MIHOMO_URL" -o mihomo.gz
+            gunzip mihomo.gz
+            chmod +x mihomo
+        
+            ./mihomo -v
     
       - name: Build
           env:
