@@ -1,0 +1,53 @@
+name: Build Clash config
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+    - name: Install Mihomo
+      shell: bash
+      run: |
+        set -euo pipefail
+    
+        MIHOMO_VERSION="v1.19.30"
+        MIHOMO_FILE="mihomo-linux-amd64-v3-v1.19.30.gz"
+        MIHOMO_URL="https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/${MIHOMO_FILE}"
+    
+        curl -fL "$MIHOMO_URL" -o mihomo.gz
+        gunzip mihomo.gz
+        chmod +x mihomo
+    
+        ./mihomo -v
+    
+      - name: Build
+          env:
+            TOP_N: "50"
+        run: python -m builder
+
+      - name: Publish generated config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git diff --cached --quiet || git commit -m "chore: update generated Clash config"
+          git push

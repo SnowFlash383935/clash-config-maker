@@ -1,0 +1,25 @@
+top_n: 50
+
+sources:
+  goida_urls: "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/source/config/urls.json"
+
+benchmark:
+  # First-pass throughput probe. Increase later for a more stable result.
+  bytes: 1000000
+  timeout_seconds: 12
+
+  # UDP is a hard requirement, not part of the score.
+  udp:
+    host: "1.1.1.1"
+    port: 53
+    timeout_seconds: 3
+
+  scoring:
+    latency_weight: 0.30
+    throughput_weight: 0.70
+
+mihomo:
+  binary: "./mihomo"
+  listen_host: "127.0.0.1"
+  startup_timeout_seconds: 8
+  shutdown_timeout_seconds: 2
