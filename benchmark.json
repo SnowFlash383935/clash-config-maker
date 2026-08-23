@@ -1,14 +1,14 @@
 [
   {
-    "name": "(10) - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] (VLESS)",
+    "name": "(07) - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] (VLESS)",
     "scheme": "vless",
     "server": "85.155.226.174",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 532.0786460000022,
-    "throughput_mbps": 5.8647085472203715,
-    "score": 0.6641496036911516,
+    "latency_ms": 465.8801030000177,
+    "throughput_mbps": 7.371474221230922,
+    "score": 0.5194693107374018,
     "error": null
   },
   {
@@ -48,16 +48,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(19) - 🇲🇽 Mexico, Querétaro City | [BL] (VLESS)",
+    "name": "🇲🇽 Mexico, Querétaro City | [BL]",
     "scheme": "vless",
     "server": "158.23.49.45",
     "port": 8443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
-    "udp_ok": true,
-    "latency_ms": 815.9691699999883,
-    "throughput_mbps": 2.381961860642418,
-    "score": 0.4335582000134848,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "🇸🇬 Singapore, Singapore (Queenstown Estate) | [BL]",
@@ -108,15 +108,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(26) - 🇺🇸 United States, Buffalo | [BL] (VLESS)",
+    "name": "(20) - 🇺🇸 United States, Buffalo | [BL] (VLESS)",
     "scheme": "vless",
     "server": "172.245.55.199",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 1185.3398899999945,
-    "throughput_mbps": 0.07756355323702978,
-    "score": 0.27633156812531295,
+    "latency_ms": 3059.937070999922,
+    "throughput_mbps": 0.03530235213230013,
+    "score": 0.2036005553535489,
     "error": null
   },
   {
@@ -162,21 +162,21 @@
     "port": 4100,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 2544.369250000045,
+    "latency_ms": 6602.254648999974,
     "throughput_mbps": null,
     "score": null,
-    "error": "ReadTimeout: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Read timed out. (read timeout=12)"
+    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
   },
   {
-    "name": "(21) - 🇨🇦 Canada, Montreal | [BL] (HYSTERIA2)",
+    "name": "(15) - 🇨🇦 Canada, Montreal | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "vpn-ca-001.fastervpn.world",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 405.0831309999694,
-    "throughput_mbps": 1.817585221857274,
-    "score": 0.40790263632834756,
+    "latency_ms": 316.27193400004217,
+    "throughput_mbps": 2.374578048797033,
+    "score": 0.3703587864615918,
     "error": null
   },
   {
@@ -204,34 +204,22 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(03) - 🇫🇷 France, Paris | [BL] (HYSTERIA2)",
+    "name": "(05) - 🇫🇷 France, Paris | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "85.204.107.172",
     "port": 8443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 373.2653480000181,
-    "throughput_mbps": 7.701986697527402,
-    "score": 0.7860271227573684,
+    "latency_ms": 352.55458599999656,
+    "throughput_mbps": 8.276515117402532,
+    "score": 0.5513148925425015,
     "error": null
   },
   {
-    "name": "(25) - 🇫🇷 France, Paris | 🌐 | [BL] (HYSTERIA2)",
+    "name": "🇫🇷 France, Paris | 🌐 | [BL]",
     "scheme": "hysteria2",
     "server": "62.210.7.139",
     "port": 60111,
-    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
-    "udp_ok": true,
-    "latency_ms": 1109.125172000006,
-    "throughput_mbps": 0.5245339160128833,
-    "score": 0.306945024400854,
-    "error": null
-  },
-  {
-    "name": "🇭🇰 Hong Kong, Hong Kong | [BL]",
-    "scheme": "hysteria2",
-    "server": "202.146.222.89",
-    "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": false,
     "latency_ms": null,
@@ -240,15 +228,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(13) - 🇰🇿 Kazakhstan, Almaty | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(18) - 🇭🇰 Hong Kong, Hong Kong | [BL] (HYSTERIA2)",
+    "scheme": "hysteria2",
+    "server": "202.146.222.89",
+    "port": 443,
+    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
+    "udp_ok": true,
+    "latency_ms": 1561.4264939999885,
+    "throughput_mbps": 0.5671744329642823,
+    "score": 0.27165537014312807,
+    "error": null
+  },
+  {
+    "name": "(09) - 🇰🇿 Kazakhstan, Almaty | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "kaz0001hy01.packet-drop-society.net",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 785.0314959999878,
-    "throughput_mbps": 4.444575505099246,
-    "score": 0.5666063964771999,
+    "latency_ms": 597.7469839999685,
+    "throughput_mbps": 5.4466856445353065,
+    "score": 0.45550289695602303,
     "error": null
   },
   {
@@ -264,15 +264,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(12) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(22) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "lmny.mangshe.xyz",
     "port": 2056,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 641.5133030000106,
-    "throughput_mbps": 4.829732720399776,
-    "score": 0.5949815932970963,
+    "latency_ms": 8968.70677100003,
+    "throughput_mbps": 3.1090194699002,
+    "score": 0.09489268490227286,
     "error": null
   },
   {
@@ -288,39 +288,39 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(11) - 🇸🇬 Singapore, Singapore | [BL] (HYSTERIA2)",
+    "name": "(16) - 🇸🇬 Singapore, Singapore | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "43.156.90.144",
     "port": 34567,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 471.5819240000201,
-    "throughput_mbps": 5.829973051037064,
-    "score": 0.6634730885497349,
+    "latency_ms": 504.26771999991615,
+    "throughput_mbps": 2.213195330054899,
+    "score": 0.3588986955313752,
     "error": null
   },
   {
-    "name": "(07) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(10) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "194.87.10.29",
     "port": 1935,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 472.73133700002745,
-    "throughput_mbps": 6.11170566590232,
-    "score": 0.6815083717249446,
+    "latency_ms": 514.6949999999606,
+    "throughput_mbps": 5.2579779044059185,
+    "score": 0.4525388083771532,
     "error": null
   },
   {
-    "name": "(08) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(11) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "sg2.xiaoliyu.cyou",
     "port": 1935,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 458.7650819999567,
-    "throughput_mbps": 6.0497272623010145,
-    "score": 0.6778923065626121,
+    "latency_ms": 513.1355220000842,
+    "throughput_mbps": 5.214007979908964,
+    "score": 0.4512350916177359,
     "error": null
   },
   {
@@ -348,99 +348,99 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(02) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(04) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "es1.xiaoliyu.cyou",
     "port": 4433,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 326.3592470000276,
-    "throughput_mbps": 9.250969255849332,
-    "score": 0.886550524318526,
+    "latency_ms": 273.88797700007217,
+    "throughput_mbps": 12.15359179412872,
+    "score": 0.6737197693833563,
     "error": null
   },
   {
-    "name": "(09) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(06) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "xby.mangshe.xyz",
     "port": 2056,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 364.9541240000076,
-    "throughput_mbps": 5.936479997948958,
-    "score": 0.673035556699972,
+    "latency_ms": 328.78232999996726,
+    "throughput_mbps": 7.6269476550110875,
+    "score": 0.5320803867356366,
     "error": null
   },
   {
-    "name": "(16) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
     "scheme": "hysteria2",
     "server": "160.187.100.109",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
-    "udp_ok": true,
-    "latency_ms": 964.9003419999644,
-    "throughput_mbps": 3.583607257515533,
-    "score": 0.5067903223202661,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
-    "name": "(18) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
     "scheme": "hysteria2",
     "server": "vpn-tw-002.fastervpn.world",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
-    "udp_ok": true,
-    "latency_ms": 833.718417,
-    "throughput_mbps": 2.7004097574086727,
-    "score": 0.453522165054364,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
-    "name": "(27) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)",
+    "name": "(12) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "nl.vpn.legendaah.xyz",
     "port": 36723,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 6487.465203,
-    "throughput_mbps": 1.7959556030777233,
-    "score": 0.2506041607201553,
+    "latency_ms": 765.7115360000262,
+    "throughput_mbps": 3.8529073406916243,
+    "score": 0.4005116980240106,
     "error": null
   },
   {
-    "name": "(01) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)",
+    "name": "(02) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "hys22.wba-pn.ru",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 261.9931749999864,
-    "throughput_mbps": 10.994563198118804,
-    "score": 1.0,
+    "latency_ms": 262.29186499995194,
+    "throughput_mbps": 12.81372745898833,
+    "score": 0.6944992400903645,
     "error": null
   },
   {
-    "name": "(06) - 🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL] (HYSTERIA2)",
+    "name": "(08) - 🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "85.204.107.172",
     "port": 8080,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 551.3373389999856,
-    "throughput_mbps": 6.21567114448458,
-    "score": 0.6861597251372655,
+    "latency_ms": 1599.3706780000139,
+    "throughput_mbps": 7.802248028955564,
+    "score": 0.4937112011354847,
     "error": null
   },
   {
-    "name": "(22) - 🇺🇸 United States | 🌐 | [BL] (HYSTERIA2)",
+    "name": "(17) - 🇺🇸 United States | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "66.94.121.46",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 506.6224799999759,
-    "throughput_mbps": 1.8371120693615792,
-    "score": 0.4065519118046193,
+    "latency_ms": 1321.7500629999677,
+    "throughput_mbps": 1.216544229810596,
+    "score": 0.2999615176109259,
     "error": null
   },
   {
@@ -456,87 +456,87 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(20) - 🇺🇸 United States, New York | [BL] (HYSTERIA2)",
+    "name": "(01) - 🇺🇸 United States, New York | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "82.39.214.167",
     "port": 8443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 328.202215000033,
-    "throughput_mbps": 2.070897898849672,
-    "score": 0.4261158034782492,
+    "latency_ms": 296.9273669999666,
+    "throughput_mbps": 22.709357624711007,
+    "score": 0.998806552328118,
     "error": null
   },
   {
-    "name": "🇷🇺 Russia | 🌐 | [BL]",
+    "name": "(19) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "els.mangshe.xyz",
     "port": 2056,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": null,
-    "throughput_mbps": null,
-    "score": null,
-    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "latency_ms": 2110.697598999991,
+    "throughput_mbps": 0.6563268967282685,
+    "score": 0.25548128320545527,
+    "error": null
   },
   {
-    "name": "(24) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)",
+    "name": "🇷🇺 Russia | 🌐 | [BL]",
     "scheme": "hysteria2",
     "server": "els1.mangshe.xyz",
     "port": 2056,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 939.8339460000216,
-    "throughput_mbps": 1.7645258191100834,
-    "score": 0.39079302478403977,
-    "error": null
+    "latency_ms": 3780.911371000002,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
   },
   {
-    "name": "(04) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)",
+    "name": "(14) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "srv-17e124.21freedom.net",
     "port": 11592,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 439.6319539999922,
-    "throughput_mbps": 7.167794488666499,
-    "score": 0.7500734255696806,
+    "latency_ms": 491.0281689999465,
+    "throughput_mbps": 3.312787495681758,
+    "score": 0.39330182313705475,
     "error": null
   },
   {
-    "name": "(23) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)",
+    "name": "(21) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "srv-0dc9de.21freedom.net",
     "port": 11592,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 433.5454079999863,
-    "throughput_mbps": 1.752847302480686,
-    "score": 0.4030220468322622,
+    "latency_ms": 5895.519625999896,
+    "throughput_mbps": 1.9027315687656496,
+    "score": 0.16354570565109827,
     "error": null
   },
   {
-    "name": "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇰🇷 | [BL]",
+    "name": "(03) - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇰🇷 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "185.230.44.170",
     "port": 9443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
-    "udp_ok": false,
-    "latency_ms": null,
-    "throughput_mbps": null,
-    "score": null,
-    "error": "TimeoutError: timed out"
+    "udp_ok": true,
+    "latency_ms": 267.6179799998408,
+    "throughput_mbps": 12.19444287318337,
+    "score": 0.6751969832164582,
+    "error": null
   },
   {
-    "name": "(17) - 🌐 Anycast-IP | 🇩🇪 🇳🇴 | [BL] (HYSTERIA2)",
+    "name": "(13) - 🌐 Anycast-IP | 🇩🇪 🇳🇴 | [BL] (HYSTERIA2)",
     "scheme": "hysteria2",
     "server": "hold.wwwinternetvideo.click",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
     "udp_ok": true,
-    "latency_ms": 728.6127070000248,
-    "throughput_mbps": 3.0418260584947245,
-    "score": 0.4781080474553654,
+    "latency_ms": 753.5664639999595,
+    "throughput_mbps": 3.6153763274818327,
+    "score": 0.39359705882008633,
     "error": null
   },
   {
@@ -564,16 +564,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(28) - 🇺🇸 United States, St Louis (Downtown) | [BL] (VMESS)",
+    "name": "🇺🇸 United States, St Louis (Downtown) | [BL]",
     "scheme": "vmess",
     "server": "172.64.80.1",
     "port": 8443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
-    "udp_ok": true,
-    "latency_ms": 11965.51523200003,
-    "throughput_mbps": 0.31950226487914835,
-    "score": 0.015513154131948955,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 | [BL]",
@@ -624,22 +624,10 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(14) - 🇩🇪 Germany [*CIDR] (VLESS)",
+    "name": "🇩🇪 Germany [*CIDR]",
     "scheme": "vless",
     "server": "185.178.208.176",
     "port": 443,
-    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
-    "udp_ok": true,
-    "latency_ms": 1529.575556999987,
-    "throughput_mbps": 4.395046775252218,
-    "score": 0.5443454771708294,
-    "error": null
-  },
-  {
-    "name": "🇩🇪 Germany [*CIDR]",
-    "scheme": "vless",
-    "server": "77.221.151.51",
-    "port": 6443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
     "udp_ok": false,
     "latency_ms": null,
@@ -648,7 +636,7 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇩🇪 Germany | [*CIDR]",
+    "name": "🇩🇪 Germany [*CIDR]",
     "scheme": "vless",
     "server": "81.163.23.187",
     "port": 7444,
@@ -660,7 +648,7 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇩🇪 Germany | [*CIDR]",
+    "name": "🇩🇪 Germany [*CIDR]",
     "scheme": "vless",
     "server": "81.163.23.243",
     "port": 443,
@@ -672,7 +660,7 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇩🇪 Germany | [*CIDR]",
+    "name": "🇩🇪 Germany [*CIDR]",
     "scheme": "vless",
     "server": "91.185.83.111",
     "port": 443,
@@ -684,9 +672,33 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇩🇪 Germany | [*CIDR]",
+    "name": "🇩🇪 Germany [*CIDR]",
     "scheme": "vless",
     "server": "91.185.83.88",
+    "port": 443,
+    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
+  },
+  {
+    "name": "🇩🇪 Germany | [*CIDR]",
+    "scheme": "vless",
+    "server": "45.152.198.111",
+    "port": 6443,
+    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
+  },
+  {
+    "name": "🇱🇻 Latvia | 🌐 | [*CIDR]",
+    "scheme": "vless",
+    "server": "lv2-pautina.unlimited-access.ru",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
     "udp_ok": false,
@@ -708,33 +720,21 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(15) - 🇸🇪 Sweden [*CIDR] (VLESS)",
+    "name": "🇸🇪 Sweden [*CIDR]",
     "scheme": "vless",
     "server": "45.91.54.73",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
-    "udp_ok": true,
-    "latency_ms": 884.0388879999637,
-    "throughput_mbps": 4.081647636456357,
-    "score": 0.5407975085285684,
-    "error": null
-  },
-  {
-    "name": "🇳🇱 The Netherlands | 🌐 [*CIDR]",
-    "scheme": "vless",
-    "server": "85.192.56.243",
-    "port": 443,
-    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
-    "udp_ok": true,
+    "udp_ok": false,
     "latency_ms": null,
     "throughput_mbps": null,
     "score": null,
-    "error": "ReadTimeout: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Read timed out. (read timeout=12)"
+    "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇬🇧 United Kingdom [*CIDR]",
+    "name": "🇸🇪 Sweden | [*CIDR]",
     "scheme": "vless",
-    "server": "medicine.repaironline.biz",
+    "server": "line.repaironline.biz",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
     "udp_ok": false,
@@ -744,9 +744,21 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇬🇧 United Kingdom | [*CIDR]",
+    "name": "🇺🇸 United States [*CIDR]",
     "scheme": "vless",
-    "server": "45.87.104.185",
+    "server": "77.221.151.51",
+    "port": 8443,
+    "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
+  },
+  {
+    "name": "🌐 Anycast-IP | 🇬🇧 🇺🇦 | [*CIDR]",
+    "scheme": "vless",
+    "server": "de-pautina.unlimited-access.ru",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
     "udp_ok": false,
@@ -756,19 +768,19 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(05) - 🇷🇺 Russia | [*CIDR] (VLESS)",
+    "name": "🇷🇺 Russia [*CIDR]",
     "scheme": "vless",
     "server": "111.88.223.82",
     "port": 443,
     "source": "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
-    "udp_ok": true,
-    "latency_ms": 516.6490620000559,
-    "throughput_mbps": 6.3147929727644545,
-    "score": 0.6934046101003941,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇷🇺 Russia | [*CIDR]",
+    "name": "🇷🇺 Russia [*CIDR]",
     "scheme": "vless",
     "server": "92.42.15.243",
     "port": 443,
