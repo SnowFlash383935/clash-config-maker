@@ -28,7 +28,13 @@ def main():
     benchmark_url = f"https://speed.cloudflare.com/__down?bytes={args.benchmark_bytes}"
 
     print("Fetching source index...")
-    urls = fetch_goida_urls(args.index_url)
+    all_urls = fetch_goida_urls(args.index_url)
+    wanted = {1, 6, 22, 23, 24, 25}
+    urls = [
+        url
+        for i, url in enumerate(all_urls, 1)
+        if i in wanted
+    ]
     print(f"Found {len(urls)} source URLs")
 
     nodes = []
