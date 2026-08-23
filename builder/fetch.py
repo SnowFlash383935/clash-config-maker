@@ -15,7 +15,7 @@ def fetch_text(url: str, timeout: int = 20) -> str:
     return r.text
 
 def fetch_urls() -> list[str]:
-    return ["https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt"]
+    return ["https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt", "https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt"]
 def decode_subscription(text: str) -> str:
     text = text.strip()
     if not text:
