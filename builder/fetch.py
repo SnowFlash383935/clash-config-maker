@@ -1,4 +1,4 @@
-from __future__ import annotations
+"from __future__ import annotations
 
 import base64
 import json
@@ -14,13 +14,11 @@ def fetch_text(url: str, timeout: int = 20) -> str:
     r.raise_for_status()
     return r.text
 
-def fetch_goida_urls(index_url: str) -> list[str]:
-    data = json.loads(fetch_text(index_url))
-    return [v for _, v in sorted(data.items(), key=lambda kv: int(kv[0]))]
-
+def fetch_urls() -> list[str]:
+    return ["https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt"]
 def decode_subscription(text: str) -> str:
     text = text.strip()
-    if not text:
+    if not text or text[0] == "#":
         return ""
     # Many mixed subscriptions are base64-encoded. Do not force-decode ordinary URI lists.
     if "://" in text:

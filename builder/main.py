@@ -6,18 +6,15 @@ import os
 from pathlib import Path
 
 from .benchmark import benchmark, score_results
-from .fetch import fetch_goida_urls, fetch_text, iter_uris
+from .fetch import fetch_urls, fetch_text, iter_uris
 from .generate import write_config
 from .parsers import parse_uri
-
-DEFAULT_INDEX = "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/source/config/urls.json"
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--top-n", type=int, default=int(os.getenv("TOP_N", "50")))
     ap.add_argument("--max-candidates", type=int, default=int(os.getenv("MAX_CANDIDATES", "0")))
     ap.add_argument("--mihomo", default=os.getenv("MIHOMO_BIN", "./mihomo"))
-    ap.add_argument("--index-url", default=DEFAULT_INDEX)
     ap.add_argument("--benchmark-url", default=os.getenv(
         "BENCHMARK_URL",
         "https://speed.cloudflare.com/__down?bytes=1000000",
@@ -28,13 +25,7 @@ def main():
     benchmark_url = f"https://speed.cloudflare.com/__down?bytes={args.benchmark_bytes}"
 
     print("Fetching source index...")
-    all_urls = fetch_goida_urls(args.index_url)
-    wanted = {1, 6, 22, 23, 24, 25}
-    urls = [
-        url
-        for i, url in enumerate(all_urls, 1)
-        if i in wanted
-    ]
+    urls = fetch_urls()
     print(f"Found {len(urls)} source URLs")
 
     nodes = []
