@@ -18,7 +18,7 @@ def fetch_urls() -> list[str]:
     return ["https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt", "https://raw.githack.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt"]
 def decode_subscription(text: str) -> str:
     text = text.strip()
-    if not text or text[0] == "#":
+    if not text:
         return ""
     # Many mixed subscriptions are base64-encoded. Do not force-decode ordinary URI lists.
     if "://" in text:
