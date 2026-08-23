@@ -33,7 +33,8 @@ def decode_subscription(text: str) -> str:
         pass
     return text
 
-def iter_uris(text: str):
+def iter_uris(text: str, limit: int = 250):
+    i = 0
     text = decode_subscription(text)
     for line in text.splitlines():
         line = line.strip()
@@ -41,4 +42,7 @@ def iter_uris(text: str):
             continue
         # Some sources put several URIs in one whitespace-separated line.
         for item in re.findall(r"[A-Za-z][A-Za-z0-9+.-]*://\S+", line):
+            if i == limit:
+                break
             yield item.rstrip(",;")
+            i += 1
