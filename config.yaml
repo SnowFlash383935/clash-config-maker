@@ -3,43 +3,27 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - 🇸🇬 Singapore, Singapore | [BL] (HYSTERIA2)
+- name: (01) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
   type: hysteria2
-  server: 43.156.90.144
-  port: 34567
+  server: hys22.wba-pn.ru
+  port: 443
   udp: true
-  password: P6qkAwznuC076mbIR2cGPg==
-  skip-cert-verify: true
-- name: (02) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: sg2.xiaoliyu.cyou
-  port: 1935
-  udp: true
-  password: 1427eb10-7529-4d38-a6a2-01b337868b37
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: (03) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: 194.87.10.29
-  port: 1935
-  udp: true
-  password: 1427eb10-7529-4d38-a6a2-01b337868b37
-  sni: 194.87.10.29
-  skip-cert-verify: true
-- name: (04) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
+  password: oCYFcbOo8s
+- name: (02) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
   type: hysteria2
   server: es1.xiaoliyu.cyou
   port: 4433
   udp: true
   password: 1427eb10-7529-4d38-a6a2-01b337868b37
   skip-cert-verify: true
-- name: (05) - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇰🇷 | [BL] (HYSTERIA2)
+- name: (03) - 🇫🇷 France, Paris | [BL] (HYSTERIA2)
   type: hysteria2
-  server: 185.230.44.170
-  port: 9443
+  server: 85.204.107.172
+  port: 8443
   udp: true
-  password: e5gqbtu97umt992j
-- name: (06) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+- name: (04) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)
   type: hysteria2
   server: srv-17e124.21freedom.net
   port: 11592
@@ -47,14 +31,7 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
-- name: (07) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: xby.mangshe.xyz
-  port: 2056
-  udp: true
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  skip-cert-verify: true
-- name: (08) - 🇷🇺 Russia | [*CIDR] (VLESS)
+- name: (05) - 🇷🇺 Russia | [*CIDR] (VLESS)
   type: vless
   server: 111.88.223.82
   port: 443
@@ -68,21 +45,58 @@ proxies:
     public-key: 6CHUluOn_Tdab7JOfUArmcfQPVEd4PbEQJMPvKWElhw
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: (09) - 🇳🇱 The Netherlands, Eygelshoven | [BL] (VLESS)
+- name: (06) - 🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: 85.204.107.172
+  port: 8080
+  udp: true
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+- name: (07) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: 194.87.10.29
+  port: 1935
+  udp: true
+  password: 1427eb10-7529-4d38-a6a2-01b337868b37
+  sni: 194.87.10.29
+  skip-cert-verify: true
+- name: (08) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: sg2.xiaoliyu.cyou
+  port: 1935
+  udp: true
+  password: 1427eb10-7529-4d38-a6a2-01b337868b37
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: (09) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: xby.mangshe.xyz
+  port: 2056
+  udp: true
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  skip-cert-verify: true
+- name: (10) - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] (VLESS)
   type: vless
-  server: 85.155.226.108
+  server: 85.155.226.174
   port: 443
   uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
   udp: true
   network: tcp
   tls: true
   servername: getsavesafe.net
-  client-fingerprint: edge
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
     short-id: 82f5d3a1e9c0b661
-- name: (10) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)
+- name: (11) - 🇸🇬 Singapore, Singapore | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: 43.156.90.144
+  port: 34567
+  udp: true
+  password: P6qkAwznuC076mbIR2cGPg==
+  skip-cert-verify: true
+- name: (12) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)
   type: hysteria2
   server: lmny.mangshe.xyz
   port: 2056
@@ -90,43 +104,27 @@ proxies:
   password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
   sni: lmny.mangshe.xyz
   skip-cert-verify: true
-- name: (11) - 🇩🇪 Germany [*CIDR] (VLESS)
-  type: vless
-  server: 77.221.151.51
-  port: 6443
-  uuid: 95e8532b-cc69-42d4-9553-e3c23292b15b
-  udp: true
-  network: grpc
-  tls: true
-  servername: maps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
-    short-id: 2da4299da566b7
-  grpc-opts:
-    grpc-service-name: your-custom-path
-- name: (12) - 🇮🇹 Italy, Milan | [BL] (VLESS)
-  type: vless
-  server: itproxy1.lockdwn.com
-  port: 443
-  uuid: 26bf8edb-8731-4f06-bc01-2cf7fefc29a6
-  udp: true
-  network: ws
-  ws-opts: {}
-- name: (13) - 🇺🇸 United States, New York | [BL] (VLESS)
-  type: vless
-  server: pl2.lckdwn.ru
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  network: ws
-  ws-opts: {}
-- name: (14) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
+- name: (13) - 🇰🇿 Kazakhstan, Almaty | 🌐 | [BL] (HYSTERIA2)
   type: hysteria2
-  server: hys22.wba-pn.ru
+  server: kaz0001hy01.packet-drop-society.net
   port: 443
   udp: true
-  password: oCYFcbOo8s
+  password: eb0e3aec-f67f-4fa2-8577-b0bff0484e77
+  sni: kaz0001hy01.packet-drop-society.net
+- name: (14) - 🇩🇪 Germany [*CIDR] (VLESS)
+  type: vless
+  server: 185.178.208.176
+  port: 443
+  uuid: 4e99bd6b-7174-4f3d-b0c3-f404cd3ec2f0
+  udp: true
+  network: ws
+  tls: true
+  servername: chat.cloud.v1.telemetryapi.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v2/client/session/connect
+    headers:
+      Host: chat.cloud.v1.telemetryapi.uk
 - name: (15) - 🇸🇪 Sweden [*CIDR] (VLESS)
   type: vless
   server: 45.91.54.73
@@ -138,74 +136,7 @@ proxies:
   servername: line.repaironline.biz
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: (16) - 🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: 85.204.107.172
-  port: 8080
-  udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-- name: (17) - 🇰🇿 Kazakhstan, Almaty | 🌐 | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: kaz0001hy01.packet-drop-society.net
-  port: 443
-  udp: true
-  password: eb0e3aec-f67f-4fa2-8577-b0bff0484e77
-  sni: kaz0001hy01.packet-drop-society.net
-- name: (18) - 🇨🇦 Canada, Montreal | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: vpn-ca-001.fastervpn.world
-  port: 443
-  udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: (19) - 🇺🇸 United States, New York | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: 82.39.214.167
-  port: 8443
-  udp: true
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-- name: (20) - 🇫🇷 France, Paris | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: 85.204.107.172
-  port: 8443
-  udp: true
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-- name: (21) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: (22) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: nl.vpn.legendaah.xyz
-  port: 36723
-  udp: true
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: nl.vpn.legendaah.xyz
-  skip-cert-verify: true
-- name: (23) - 🇳🇱 The Netherlands | 🌐 [*CIDR] (VLESS)
-  type: vless
-  server: 85.192.56.243
-  port: 443
-  uuid: 59954126-633d-4ed2-9af5-8801e85ec7d5
-  udp: true
-  network: grpc
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: hEyhCVfwVjIWoXIkG_VfqJ0DsgXbhjap5Waqwq-NqGE
-    short-id: 3e
-  grpc-opts:
-    grpc-service-name: google.android.location.SyncService
-- name: (24) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
+- name: (16) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
   type: hysteria2
   server: 160.187.100.109
   port: 443
@@ -213,15 +144,69 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: (25) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)
+- name: (17) - 🌐 Anycast-IP | 🇩🇪 🇳🇴 | [BL] (HYSTERIA2)
   type: hysteria2
-  server: 185.156.44.99
+  server: hold.wwwinternetvideo.click
+  port: 443
+  udp: true
+  password: umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx
+  sni: germany1.h2corp.local
+  skip-cert-verify: true
+- name: (18) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: (19) - 🇲🇽 Mexico, Querétaro City | [BL] (VLESS)
+  type: vless
+  server: 158.23.49.45
+  port: 8443
+  uuid: 2808bf00-f7af-4b8b-85cb-6bb5cfa4cba6
+  udp: true
+  network: tcp
+  tls: true
+  servername: mexicotrash.duckdns.org
+  client-fingerprint: '360'
+- name: (20) - 🇺🇸 United States, New York | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: 82.39.214.167
+  port: 8443
+  udp: true
+  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  sni: hopp-us.yyuyy.com
+- name: (21) - 🇨🇦 Canada, Montreal | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: vpn-ca-001.fastervpn.world
+  port: 443
+  udp: true
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: (22) - 🇺🇸 United States | 🌐 | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: 66.94.121.46
   port: 443
   udp: true
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: www.broadcom.com
   skip-cert-verify: true
-- name: (26) - 🇫🇷 France, Paris | 🌐 | [BL] (HYSTERIA2)
+- name: (23) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: srv-0dc9de.21freedom.net
+  port: 11592
+  udp: true
+  password: d532115bea
+- name: (24) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)
+  type: hysteria2
+  server: els1.mangshe.xyz
+  port: 2056
+  udp: true
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  skip-cert-verify: true
+- name: (25) - 🇫🇷 France, Paris | 🌐 | [BL] (HYSTERIA2)
   type: hysteria2
   server: 62.210.7.139
   port: 60111
@@ -229,37 +214,29 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
-- name: (27) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)
-  type: hysteria2
-  server: els.mangshe.xyz
-  port: 2056
-  udp: true
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: els.mangshe.xyz
-  skip-cert-verify: true
-- name: (28) - 🇭🇰 Hong Kong, Hong Kong | [BL] (VMESS)
-  type: vmess
-  server: n1747624274.4u9ma.icu
+- name: (26) - 🇺🇸 United States, Buffalo | [BL] (VLESS)
+  type: vless
+  server: 172.245.55.199
   port: 443
-  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
-  alterId: 0
-  cipher: auto
+  uuid: d219e1a7-3970-4b9a-a112-2c90ec7848b5
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: n1747624274.4u9ma.icu
-  ws-opts:
-    path: /
-    headers:
-      Host: n1747624274.4u9ma.icu
-- name: (29) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SQ1-UFO_LUU_sk2b2hAT60Hc_JMGF0NXr6dQiqZATSg
+    short-id: 2f575a1f4efa38bf
+- name: (27) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
   type: hysteria2
-  server: els1.mangshe.xyz
-  port: 2056
+  server: nl.vpn.legendaah.xyz
+  port: 36723
   udp: true
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: nl.vpn.legendaah.xyz
   skip-cert-verify: true
-- name: (30) - 🇺🇸 United States, St Louis (Downtown) | [BL] (VMESS)
+- name: (28) - 🇺🇸 United States, St Louis (Downtown) | [BL] (VMESS)
   type: vmess
   server: 172.64.80.1
   port: 8443
@@ -277,36 +254,34 @@ proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - 🇸🇬 Singapore, Singapore | [BL] (HYSTERIA2)
-  - (02) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
-  - (03) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
-  - (04) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
-  - (05) - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇰🇷 | [BL] (HYSTERIA2)
-  - (06) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)
-  - (07) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
-  - (08) - 🇷🇺 Russia | [*CIDR] (VLESS)
-  - (09) - 🇳🇱 The Netherlands, Eygelshoven | [BL] (VLESS)
-  - (10) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)
-  - (11) - 🇩🇪 Germany [*CIDR] (VLESS)
-  - (12) - 🇮🇹 Italy, Milan | [BL] (VLESS)
-  - (13) - 🇺🇸 United States, New York | [BL] (VLESS)
-  - (14) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
+  - (01) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
+  - (02) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
+  - (03) - 🇫🇷 France, Paris | [BL] (HYSTERIA2)
+  - (04) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)
+  - (05) - 🇷🇺 Russia | [*CIDR] (VLESS)
+  - (06) - 🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL] (HYSTERIA2)
+  - (07) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
+  - (08) - 🇸🇬 Singapore, Singapore | 🌐 | [BL] (HYSTERIA2)
+  - (09) - 🇪🇸 Spain, Madrid | 🌐 | [BL] (HYSTERIA2)
+  - (10) - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL] (VLESS)
+  - (11) - 🇸🇬 Singapore, Singapore | [BL] (HYSTERIA2)
+  - (12) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)
+  - (13) - 🇰🇿 Kazakhstan, Almaty | 🌐 | [BL] (HYSTERIA2)
+  - (14) - 🇩🇪 Germany [*CIDR] (VLESS)
   - (15) - 🇸🇪 Sweden [*CIDR] (VLESS)
-  - (16) - 🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL] (HYSTERIA2)
-  - (17) - 🇰🇿 Kazakhstan, Almaty | 🌐 | [BL] (HYSTERIA2)
-  - (18) - 🇨🇦 Canada, Montreal | [BL] (HYSTERIA2)
-  - (19) - 🇺🇸 United States, New York | [BL] (HYSTERIA2)
-  - (20) - 🇫🇷 France, Paris | [BL] (HYSTERIA2)
-  - (21) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
-  - (22) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
-  - (23) - 🇳🇱 The Netherlands | 🌐 [*CIDR] (VLESS)
-  - (24) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
-  - (25) - 🇷🇴 Romania, Bucharest | 🌐 | [BL] (HYSTERIA2)
-  - (26) - 🇫🇷 France, Paris | 🌐 | [BL] (HYSTERIA2)
-  - (27) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)
-  - (28) - 🇭🇰 Hong Kong, Hong Kong | [BL] (VMESS)
-  - (29) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)
-  - (30) - 🇺🇸 United States, St Louis (Downtown) | [BL] (VMESS)
+  - (16) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
+  - (17) - 🌐 Anycast-IP | 🇩🇪 🇳🇴 | [BL] (HYSTERIA2)
+  - (18) - 🇹🇼 Taiwan, Taoyuan | [BL] (HYSTERIA2)
+  - (19) - 🇲🇽 Mexico, Querétaro City | [BL] (VLESS)
+  - (20) - 🇺🇸 United States, New York | [BL] (HYSTERIA2)
+  - (21) - 🇨🇦 Canada, Montreal | [BL] (HYSTERIA2)
+  - (22) - 🇺🇸 United States | 🌐 | [BL] (HYSTERIA2)
+  - (23) - 🇷🇺 Russia, Moscow | [BL] (HYSTERIA2)
+  - (24) - 🇷🇺 Russia | 🌐 | [BL] (HYSTERIA2)
+  - (25) - 🇫🇷 France, Paris | 🌐 | [BL] (HYSTERIA2)
+  - (26) - 🇺🇸 United States, Buffalo | [BL] (VLESS)
+  - (27) - 🇳🇱 The Netherlands, Amsterdam | [BL] (HYSTERIA2)
+  - (28) - 🇺🇸 United States, St Louis (Downtown) | [BL] (VMESS)
   - DIRECT
 rules:
 - MATCH,TOP
