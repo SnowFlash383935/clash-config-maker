@@ -80,7 +80,7 @@ def main():
     selected = valid[:args.top_n]
 
     for rank, result in enumerate(selected, 1):
-        result.node.name = f"TOP-{rank:02d}-{result.node.scheme.upper()}"
+        result.node.name = f"({rank:02d}) - {result.node.name} ({result.node.scheme.upper()})"
 
     write_config([r.node for r in selected])
 
