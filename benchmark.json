@@ -12,15 +12,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(13) -  t.me/rjsxrd (VMESS)",
+    "name": "(15) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "62.210.127.120",
     "port": 23388,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 491.8104879999987,
-    "throughput_mbps": 6.886458194868895,
-    "score": 0.408927862767574,
+    "latency_ms": 825.5900810000014,
+    "throughput_mbps": 5.119112498237595,
+    "score": 0.47435636894249117,
     "error": null
   },
   {
@@ -29,22 +29,22 @@
     "server": "cdn.netraidly.ru",
     "port": 40443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": false,
+    "udp_ok": true,
     "latency_ms": null,
     "throughput_mbps": null,
     "score": null,
-    "error": "TimeoutError: timed out"
+    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
   },
   {
-    "name": "(15) - 🇱🇹 (VLESS)",
+    "name": "(22) - 🇱🇹 (VLESS)",
     "scheme": "vless",
     "server": "84.32.209.7",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 625.6347420000026,
-    "throughput_mbps": 5.726081868300485,
-    "score": 0.38145234205815853,
+    "latency_ms": 740.7695630000006,
+    "throughput_mbps": 4.433161924203951,
+    "score": 0.4505494463019154,
     "error": null
   },
   {
@@ -53,11 +53,11 @@
     "server": "66.90.90.13",
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
-    "latency_ms": 2932.9900359999997,
+    "udp_ok": false,
+    "latency_ms": null,
     "throughput_mbps": null,
     "score": null,
-    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "🇳🇱 The Netherlands [*CIDR] t.me/rjsxrd",
@@ -72,27 +72,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(20) - 🇷🇺 Russia | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
+    "name": "(23) - 🇷🇺 Russia | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "185.147.27.183",
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 589.8850959999961,
-    "throughput_mbps": 5.274520687080574,
-    "score": 0.37454146046749776,
+    "latency_ms": 731.7821230000021,
+    "throughput_mbps": 4.309006569943386,
+    "score": 0.44551202357799713,
     "error": null
   },
   {
-    "name": "(18) - 🇷🇺 Russia | 🌐 [*CIDR] t.me/rjsxrd (VLESS)",
+    "name": "(24) - 🇷🇺 Russia | 🌐 [*CIDR] t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "rus.noooo.win",
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 591.9823210000033,
-    "throughput_mbps": 5.353251848426665,
-    "score": 0.3759244555683934,
+    "latency_ms": 732.9289790000005,
+    "throughput_mbps": 4.2869685700406395,
+    "score": 0.44430403680554487,
     "error": null
   },
   {
@@ -120,27 +120,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(21) - 🇩🇪 (VLESS)",
+    "name": "(19) - 🇩🇪 (VLESS)",
     "scheme": "vless",
     "server": "194.31.223.87",
     "port": 5443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 557.2296140000077,
-    "throughput_mbps": 4.965065353318172,
-    "score": 0.37015657578287375,
+    "latency_ms": 665.2585559999977,
+    "throughput_mbps": 4.518431991047917,
+    "score": 0.463357458309824,
     "error": null
   },
   {
-    "name": "(37) - 🇭🇺 Hungary | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
+    "name": "(36) - 🇭🇺 Hungary | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "45.195.111.108",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 574.2166189999978,
-    "throughput_mbps": 0.4240270791253133,
-    "score": 0.2844493211625644,
+    "latency_ms": 829.7123190000093,
+    "throughput_mbps": 0.18520746517593992,
+    "score": 0.23282344164649232,
     "error": null
   },
   {
@@ -258,9 +258,9 @@
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 780.8208399999899,
-    "throughput_mbps": 2.0445420605826334,
-    "score": 0.30587889532280044,
+    "latency_ms": 1011.6736920000164,
+    "throughput_mbps": 3.4777052441585696,
+    "score": 0.3728639576899889,
     "error": null
   },
   {
@@ -288,15 +288,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(27) -  t.me/rjsxrd (VMESS)",
+    "name": "(20) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "149.88.23.202",
     "port": 18000,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 705.9468270000195,
-    "throughput_mbps": 3.381896546217997,
-    "score": 0.3341282027479844,
+    "latency_ms": 585.1436619999788,
+    "throughput_mbps": 4.220076662450708,
+    "score": 0.45794916096910276,
     "error": null
   },
   {
@@ -360,27 +360,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(35) - 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
+    "name": "(33) - 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "176.108.252.153",
     "port": 9871,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 646.2741569999935,
-    "throughput_mbps": 1.0235574855396679,
-    "score": 0.2925659697484352,
+    "latency_ms": 1144.3852749999905,
+    "throughput_mbps": 2.7667249594173344,
+    "score": 0.32293860502751476,
     "error": null
   },
   {
-    "name": "(08) -  t.me/rjsxrd (VMESS)",
+    "name": "(29) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "newrelax.relaxedboy.online",
     "port": 110,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 349.25606599998105,
-    "throughput_mbps": 7.608166759504137,
-    "score": 0.4285705053535643,
+    "latency_ms": 1465.0211740000145,
+    "throughput_mbps": 5.06611551467197,
+    "score": 0.3985871553615597,
     "error": null
   },
   {
@@ -420,15 +420,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(05) -  t.me/rjsxrd (VMESS)",
+    "name": "(01) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "129.146.77.248",
     "port": 39495,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 292.54783999999745,
-    "throughput_mbps": 10.059095235559123,
-    "score": 0.47687589977838113,
+    "latency_ms": 242.7370640000106,
+    "throughput_mbps": 14.512416264627626,
+    "score": 1.0,
     "error": null
   },
   {
@@ -444,15 +444,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(17) - 🇩🇪 Germany | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
+    "name": "(25) - 🇩🇪 Germany | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "154.222.9.228",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 423.9701380000156,
-    "throughput_mbps": 5.113731815000014,
-    "score": 0.3786757738469897,
+    "latency_ms": 577.2082659999853,
+    "throughput_mbps": 3.515153536897397,
+    "score": 0.4244161350259331,
     "error": null
   },
   {
@@ -492,15 +492,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(11) - 🇫🇷 France | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
+    "name": "(10) - 🇫🇷 France | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "45.192.2.72",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 581.6481450000026,
-    "throughput_mbps": 7.350743094843047,
-    "score": 0.41374819070889113,
+    "latency_ms": 552.5421590000121,
+    "throughput_mbps": 5.3751478772050865,
+    "score": 0.5181148184898055,
     "error": null
   },
   {
@@ -528,15 +528,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(19) - 🇷🇺 (VLESS)",
+    "name": "(21) - 🇷🇺 (VLESS)",
     "scheme": "vless",
     "server": "s4.arch.anti-zapret.com",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 563.2221029999869,
-    "throughput_mbps": 5.231707899172439,
-    "score": 0.3748882316391184,
+    "latency_ms": 716.3089930000126,
+    "throughput_mbps": 4.524108861607051,
+    "score": 0.4577923368317125,
     "error": null
   },
   {
@@ -624,16 +624,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(26) - 🇫🇷 France | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
+    "name": "🇫🇷 France | 🌐 | [*CIDR] t.me/rjsxrd",
     "scheme": "vless",
     "server": "72.56.4.94",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
-    "latency_ms": 848.9554070000054,
-    "throughput_mbps": 3.7519799503046176,
-    "score": 0.3348965815109901,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "🇸🇪 瑞典 | SWE t.me/rjsxrd",
@@ -684,16 +684,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇳🇱 Netherlands | TG: @HardVpn_robot t.me/rjsxrd",
+    "name": "(08) - 🇳🇱 Netherlands | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "154.83.246.52",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 436.71497600001885,
-    "throughput_mbps": null,
-    "score": null,
-    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "latency_ms": 553.3767310000144,
+    "throughput_mbps": 5.586139588337115,
+    "score": 0.5283279568207578,
+    "error": null
   },
   {
     "name": "🇳🇱 荷兰 | NLD t.me/rjsxrd",
@@ -713,23 +713,23 @@
     "server": "84.23.54.213",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": false,
+    "udp_ok": true,
     "latency_ms": null,
     "throughput_mbps": null,
     "score": null,
-    "error": "TimeoutError: timed out"
+    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
   },
   {
-    "name": "🇷🇺",
+    "name": "(07) - 🇷🇺 (VLESS)",
     "scheme": "vless",
     "server": "201.51.1.84",
     "port": 16923,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": false,
-    "latency_ms": null,
-    "throughput_mbps": null,
-    "score": null,
-    "error": "TimeoutError: timed out"
+    "udp_ok": true,
+    "latency_ms": 462.855090000005,
+    "throughput_mbps": 5.745651995986882,
+    "score": 0.5464812039932664,
+    "error": null
   },
   {
     "name": "🇩🇰 丹麦 | DNK t.me/rjsxrd",
@@ -768,15 +768,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(23) -  t.me/rjsxrd (VMESS)",
+    "name": "(11) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "140.238.2.250",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 580.8969120000143,
-    "throughput_mbps": 4.19768876945924,
-    "score": 0.3547778002034051,
+    "latency_ms": 473.2258950000414,
+    "throughput_mbps": 5.147139319016711,
+    "score": 0.5160521302603337,
     "error": null
   },
   {
@@ -852,27 +852,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(06) -  t.me/rjsxrd (VMESS)",
+    "name": " t.me/rjsxrd",
     "scheme": "vmess",
     "server": "rush-t2tvv.ceeopp.site",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
-    "latency_ms": 763.5713350000515,
-    "throughput_mbps": 9.900764783090635,
-    "score": 0.453634106543893,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
-    "name": "(28) -  t.me/rjsxrd (VMESS)",
+    "name": "(14) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "132.145.80.230",
     "port": 80,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 775.887995000005,
-    "throughput_mbps": 3.5225762696897407,
-    "score": 0.33374954875215257,
+    "latency_ms": 616.4148500000124,
+    "throughput_mbps": 4.6459693640737605,
+    "score": 0.47517862277224404,
     "error": null
   },
   {
@@ -881,11 +881,11 @@
     "server": "72.56.81.165",
     "port": 40443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
+    "udp_ok": false,
     "latency_ms": null,
     "throughput_mbps": null,
     "score": null,
-    "error": "SSLError: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Max retries exceeded with url: /__down?bytes=1000000 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "🇺🇸 美国 | USA t.me/rjsxrd",
@@ -912,15 +912,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(32) - 🇵🇱 Poland | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
+    "name": "(38) - 🇵🇱 Poland | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "45.198.96.250",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 1649.372489999962,
-    "throughput_mbps": 3.721967110273787,
-    "score": 0.29987459871651734,
+    "latency_ms": 2461.143378000031,
+    "throughput_mbps": 1.6384522895401474,
+    "score": 0.11711658752856582,
     "error": null
   },
   {
@@ -960,27 +960,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(12) - 🇬🇧_英国_240 t.me/rjsxrd (VLESS)",
+    "name": "(17) - 🇬🇧_英国_240 t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "193.219.99.142",
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 535.0723990000006,
-    "throughput_mbps": 6.993729737509117,
-    "score": 0.4090726674592519,
+    "latency_ms": 763.0724840000198,
+    "throughput_mbps": 4.84787930722585,
+    "score": 0.4682592794226129,
     "error": null
   },
   {
-    "name": "(34) - 🇩🇪 (VLESS)",
+    "name": "(35) - 🇩🇪 (VLESS)",
     "scheme": "vless",
     "server": "51.77.76.61",
     "port": 8444,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 488.607098999978,
-    "throughput_mbps": 0.6787952159964425,
-    "score": 0.29290251382883614,
+    "latency_ms": 724.0821689999848,
+    "throughput_mbps": 0.3713576300627174,
+    "score": 0.25400725647809036,
     "error": null
   },
   {
@@ -1020,15 +1020,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(14) - 1 (VLESS)",
+    "name": "(13) - 1 (VLESS)",
     "scheme": "vless",
     "server": "147.45.173.79",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 477.5184819999936,
-    "throughput_mbps": 6.696442330525126,
-    "score": 0.40598743205489474,
+    "latency_ms": 652.9025789999992,
+    "throughput_mbps": 5.172533484859478,
+    "score": 0.49672968884032676,
     "error": null
   },
   {
@@ -1080,15 +1080,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(22) - 🇮🇹 Italy | [*CIDR] t.me/rjsxrd (VLESS)",
+    "name": "(18) - 🇮🇹 Italy | [*CIDR] t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "212.41.9.137",
     "port": 9881,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 667.5620600000229,
-    "throughput_mbps": 4.704848711517046,
-    "score": 0.36053702977292895,
+    "latency_ms": 879.6004489999518,
+    "throughput_mbps": 5.101908163460353,
+    "score": 0.46733456537848894,
     "error": null
   },
   {
@@ -1110,7 +1110,7 @@
     "port": 6443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 1004.1515880000134,
+    "latency_ms": 1596.103567,
     "throughput_mbps": null,
     "score": null,
     "error": "ReadTimeout: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Read timed out. (read timeout=12)"
@@ -1188,39 +1188,39 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(10) - 🇫🇷 (VLESS)",
+    "name": "(09) - 🇫🇷 (VLESS)",
     "scheme": "vless",
     "server": "62.210.91.10",
     "port": 23576,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 421.8480179999915,
-    "throughput_mbps": 7.507616239716241,
-    "score": 0.42356361409388843,
+    "latency_ms": 586.4880190000008,
+    "throughput_mbps": 5.494099591484299,
+    "score": 0.5200416274933666,
     "error": null
   },
   {
-    "name": "(24) - 🇩🇪 (VLESS)",
+    "name": "🇩🇪",
     "scheme": "vless",
     "server": "87.120.84.32",
     "port": 33843,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
-    "latency_ms": 542.8381490000334,
-    "throughput_mbps": 3.2484138018753326,
-    "score": 0.33865267370136265,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
-    "name": "(36) - 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
+    "name": "(32) - 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "155.212.175.2",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 644.2688459999886,
-    "throughput_mbps": 0.9599167387419106,
-    "score": 0.2914614026200265,
+    "latency_ms": 613.7216360000366,
+    "throughput_mbps": 1.9088419444324864,
+    "score": 0.34175604152671113,
     "error": null
   },
   {
@@ -1236,40 +1236,40 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(33) - ! (VLESS)",
+    "name": "(34) - ! (VLESS)",
     "scheme": "vless",
     "server": "212.41.9.137",
     "port": 9889,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 629.0932009999892,
-    "throughput_mbps": 1.1155422506864128,
-    "score": 0.2950269614843747,
+    "latency_ms": 662.737849999985,
+    "throughput_mbps": 1.4369810698070227,
+    "score": 0.3130921470736565,
     "error": null
   },
   {
-    "name": "(01) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)",
+    "name": "🇺🇸 美国 | USA t.me/rjsxrd",
     "scheme": "vless",
     "server": "169.40.42.235",
     "port": 443,
-    "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
-    "latency_ms": 232.3842979999995,
-    "throughput_mbps": 37.58471118219325,
-    "score": 0.9945497222233186,
-    "error": null
-  },
-  {
-    "name": "🇺🇸_美国_93 t.me/rjsxrd",
-    "scheme": "vless",
-    "server": "31.76.5.26",
-    "port": 13443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": false,
     "latency_ms": null,
     "throughput_mbps": null,
     "score": null,
     "error": "TimeoutError: timed out"
+  },
+  {
+    "name": "(39) - 🇺🇸_美国_93 t.me/rjsxrd (VLESS)",
+    "scheme": "vless",
+    "server": "31.76.5.26",
+    "port": 13443,
+    "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
+    "udp_ok": true,
+    "latency_ms": 2864.076721999993,
+    "throughput_mbps": 0.45295395019296575,
+    "score": 0.013081580797446804,
+    "error": null
   },
   {
     "name": "🇩🇪 德国 | DEU t.me/rjsxrd",
@@ -1308,15 +1308,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(39) -  t.me/rjsxrd (VMESS)",
+    "name": "(28) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "vah4urdzl3jdx5r2.v.3dns.vip",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 7073.945337999987,
-    "throughput_mbps": 0.17732506877653978,
-    "score": 0.0,
+    "latency_ms": 862.9895419999798,
+    "throughput_mbps": 3.7096505844455314,
+    "score": 0.40121256502845193,
     "error": null
   },
   {
@@ -1332,27 +1332,27 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(38) - 🇦🇲 (VLESS)",
+    "name": "(37) - 🇦🇲 (VLESS)",
     "scheme": "vless",
     "server": "77.91.68.70",
     "port": 55983,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 1797.636257000022,
-    "throughput_mbps": 2.297858322511928,
-    "score": 0.2668422192550657,
+    "latency_ms": 1899.7076920000495,
+    "throughput_mbps": 2.238387600681561,
+    "score": 0.210681953320969,
     "error": null
   },
   {
-    "name": "(07) -  t.me/rjsxrd (VMESS)",
+    "name": "(02) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "guanwang.awsno.com",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 458.25146499998937,
-    "throughput_mbps": 8.974886289200287,
-    "score": 0.44945318772717285,
+    "latency_ms": 326.77287699999624,
+    "throughput_mbps": 14.3821917228359,
+    "score": 0.9840199744194265,
     "error": null
   },
   {
@@ -1392,51 +1392,51 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": " t.me/rjsxrd",
+    "name": "(27) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "ce0gedpxwou6cqon.v.3dns.vip",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": false,
-    "latency_ms": null,
-    "throughput_mbps": null,
-    "score": null,
-    "error": "TimeoutError: timed out"
+    "udp_ok": true,
+    "latency_ms": 861.7306549999739,
+    "throughput_mbps": 3.7383734220883555,
+    "score": 0.40275998159951487,
+    "error": null
   },
   {
-    "name": "(25) - 🇰🇷 (VLESS)",
+    "name": "(16) - 🇰🇷 (VLESS)",
     "scheme": "vless",
     "server": "3.39.4.109",
     "port": 13672,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 806.8295159999934,
-    "throughput_mbps": 3.6769387913038605,
-    "score": 0.33530599111502657,
+    "latency_ms": 640.1056770000082,
+    "throughput_mbps": 4.647585943705395,
+    "score": 0.47254630198787717,
     "error": null
   },
   {
-    "name": "(29) -  t.me/rjsxrd (VMESS)",
+    "name": "(30) -  t.me/rjsxrd (VMESS)",
     "scheme": "vmess",
     "server": "165.154.195.38",
     "port": 35034,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 680.4642609999974,
-    "throughput_mbps": 3.2626130684047885,
-    "score": 0.3329931660048631,
+    "latency_ms": 534.0396450000071,
+    "throughput_mbps": 2.6030884974075414,
+    "score": 0.38479482858980124,
     "error": null
   },
   {
-    "name": "(16) - 🇩🇪 Germany | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
+    "name": "(26) - 🇩🇪 Germany | TG: @HardVpn_robot t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "154.222.9.228",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 414.71552900003417,
-    "throughput_mbps": 5.124172397958443,
-    "score": 0.3792695859174679,
+    "latency_ms": 557.0795390000285,
+    "throughput_mbps": 3.1899984590793435,
+    "score": 0.4108333184357052,
     "error": null
   },
   {
@@ -1488,15 +1488,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(09) - 🇩🇪_德国_17 t.me/rjsxrd (VLESS)",
+    "name": "(12) - 🇩🇪_德国_17 t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "bla-bla-bla-de.anti-zapret.com",
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 406.81033699991076,
-    "throughput_mbps": 7.493792369556185,
-    "score": 0.4239523469122355,
+    "latency_ms": 589.2420769999944,
+    "throughput_mbps": 5.2769894464921006,
+    "score": 0.5091188523624823,
     "error": null
   },
   {
@@ -3384,15 +3384,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(30) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)",
+    "name": "(05) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)",
     "scheme": "vless",
     "server": "169.40.42.173",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
     "udp_ok": true,
-    "latency_ms": 105.78968499999064,
-    "throughput_mbps": 0.6749251037805815,
-    "score": 0.3093115307080464,
+    "latency_ms": 350.5687780000244,
+    "throughput_mbps": 7.807636109566684,
+    "score": 0.6600764417037659,
     "error": null
   },
   {
@@ -3402,9 +3402,9 @@
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
     "udp_ok": true,
-    "latency_ms": 120.83000299992364,
-    "throughput_mbps": 25.804791865341063,
-    "score": 0.7789162297693417,
+    "latency_ms": 415.775047000011,
+    "throughput_mbps": 8.202113032665324,
+    "score": 0.6718872782178115,
     "error": null
   },
   {
@@ -3438,21 +3438,21 @@
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
     "udp_ok": true,
-    "latency_ms": 168.81957700002204,
-    "throughput_mbps": 28.202415675099996,
-    "score": 0.821716585963604,
+    "latency_ms": 283.65186399992126,
+    "throughput_mbps": 10.242606099198872,
+    "score": 0.7867027411287061,
     "error": null
   },
   {
-    "name": "(02) - Server 3 (VLESS)",
+    "name": "(06) - Server 3 (VLESS)",
     "scheme": "vless",
     "server": "169.40.42.184",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
     "udp_ok": true,
-    "latency_ms": 230.17883400007122,
-    "throughput_mbps": 35.05714838854146,
-    "score": 0.9473466899113245,
+    "latency_ms": 417.65608900004736,
+    "throughput_mbps": 7.193955584562494,
+    "score": 0.6224153584797384,
     "error": null
   },
   {
