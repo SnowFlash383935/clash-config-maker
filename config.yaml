@@ -3,9 +3,9 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)
+- name: (01) - Server 3 (VLESS)
   type: vless
-  server: 169.40.42.173
+  server: 169.40.42.184
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
@@ -31,34 +31,31 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: (03) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
+- name: (03) - Бесплатный (VLESS)
   type: vless
-  server: 169.40.42.179
+  server: ziro.skin
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: f028a8c0-6763-4558-aee3-2563db9d7825
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  ws-opts:
+    path: /xxvclws
+- name: (04) - Бесплатный (VLESS)
+  type: vless
+  server: app23.jarvestip.ru
+  port: 443
+  uuid: f73681a4-1654-446f-a7eb-bda3bfd9e521
   udp: true
   network: tcp
   tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
+  servername: app23.jarvestip.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: (04) - Server 3 (VLESS)
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: 2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U
+    short-id: 2aef5875
 - name: (05) - Бесплатный (VLESS)
   type: vless
   server: chmstnd1.jarvesitw.ru
@@ -89,6 +86,34 @@ proxies:
     short-id: cf41f778
 - name: (07) - Бесплатный (VLESS)
   type: vless
+  server: app17.jarvestip.ru
+  port: 443
+  uuid: f73681a4-1654-446f-a7eb-bda3bfd9e521
+  udp: true
+  network: tcp
+  tls: true
+  servername: app5.jarvesitw.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo
+    short-id: 535a3304
+- name: (08) - Бесплатный (VLESS)
+  type: vless
+  server: app47.jarvestip.ru
+  port: 443
+  uuid: f73681a4-1654-446f-a7eb-bda3bfd9e521
+  udp: true
+  network: tcp
+  tls: true
+  servername: app15.jarvestip.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 2e9dGid5D-e4demAVGqU71uEeusuBhviikchaJ96E3o
+    short-id: 8ece2039
+- name: (09) - Бесплатный (VLESS)
+  type: vless
   server: 43.245.227.70
   port: 443
   uuid: f1c496bf-d2ab-45be-bc13-051d60d227b7
@@ -100,65 +125,9 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: nULEPKy53x8pz3C1grQxzZ9hcADidKOeyMhSipgODwI
-- name: (08) - Бесплатный (VLESS)
+- name: (10) - ! (VLESS)
   type: vless
-  server: 83.136.210.237
-  port: 443
-  uuid: df880bf8-2635-4a83-a6bf-91bb36df284b
-  udp: true
-  network: tcp
-  tls: true
-  servername: fr2.janusgate.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 6ed1d644822b2951
-- name: (09) - 7025 (VLESS)
-  type: vless
-  server: nid1fdcvp.jarvesthh.ru
-  port: 443
-  uuid: f73681a4-1654-446f-a7eb-bda3bfd9e521
-  udp: true
-  network: tcp
-  tls: true
-  servername: app15.jarvestip.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2e9dGid5D-e4demAVGqU71uEeusuBhviikchaJ96E3o
-    short-id: 8ece2039
-- name: (10) - Бесплатный (VLESS)
-  type: vless
-  server: 50.7.95.174
-  port: 443
-  uuid: f73681a4-1654-446f-a7eb-bda3bfd9e521
-  udp: true
-  network: tcp
-  tls: true
-  servername: app15.jarvestip.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2e9dGid5D-e4demAVGqU71uEeusuBhviikchaJ96E3o
-    short-id: 8ece2039
-- name: (11) - 6 (VLESS)
-  type: vless
-  server: 147.45.173.79
-  port: 443
-  uuid: e641d6e5-84c9-4acd-b541-7a98b30bdfe7
-  udp: true
-  network: tcp
-  tls: true
-  servername: app.restorium.su
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: (12) - ! (VLESS)
-  type: vless
-  server: wsnl7.wba-pn.ru
+  server: 46.19.69.201
   port: 443
   uuid: 053440e6-fc8d-48d9-bb4f-2675e367f64f
   udp: true
@@ -167,59 +136,7 @@ proxies:
   servername: wsnl7.wba-pn.ru
   client-fingerprint: firefox
   ws-opts: {}
-- name: (13) - Бесплатный (VLESS)
-  type: vless
-  server: 83.136.211.167
-  port: 443
-  uuid: df880bf8-2635-4a83-a6bf-91bb36df284b
-  udp: true
-  network: tcp
-  tls: true
-  servername: fr2.janusgate.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 6ed1d644822b2951
-- name: (14) - ! (VLESS)
-  type: vless
-  server: 147.45.226.155
-  port: 8443
-  uuid: 9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc
-  udp: true
-  network: ws
-  tls: true
-  servername: wsnl24.wba-pn.ru
-  client-fingerprint: chrome
-  ws-opts: {}
-- name: (15) - Бесплатный (VLESS)
-  type: vless
-  server: 83.136.210.59
-  port: 443
-  uuid: df880bf8-2635-4a83-a6bf-91bb36df284b
-  udp: true
-  network: tcp
-  tls: true
-  servername: fr2.janusgate.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 6ed1d644822b2951
-- name: (16) - 12 (VLESS)
-  type: vless
-  server: hys41.wba-pn.ru
-  port: 443
-  uuid: 8e8e4592-6088-4d00-b061-ef5456d0eb9c
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-    headers:
-      Host: hys41.wba-pn.ru
-- name: (17) - Бесплатный (VLESS)
+- name: (11) - Бесплатный (VLESS)
   type: vless
   server: 72.56.117.75
   port: 443
@@ -230,47 +147,90 @@ proxies:
   servername: hys41.wba-pn.ru
   client-fingerprint: firefox
   ws-opts: {}
-- name: (18) - Бесплатный (VLESS)
+- name: (12) - 3 (VLESS)
   type: vless
-  server: 83.136.208.170
+  server: hys41.wba-pn.ru
   port: 443
-  uuid: df880bf8-2635-4a83-a6bf-91bb36df284b
-  udp: true
-  network: tcp
-  tls: true
-  servername: fr2.janusgate.org
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 6ed1d644822b2951
-- name: (19) - Бесплатный (VLESS)
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  uuid: 8e8e4592-6088-4d00-b061-ef5456d0eb9c
   udp: true
   network: ws
   tls: true
-  servername: rubifen.adaspoloandco.com
+  client-fingerprint: qq
+  ws-opts: {}
+- name: (13) - ! (VLESS)
+  type: vless
+  server: hys42.wba-pn.ru
+  port: 443
+  uuid: f0d24eb0-a88a-455f-92b8-3a99c38dfb0c
+  udp: true
+  network: ws
+  tls: true
+  servername: hys42.wba-pn.ru
   client-fingerprint: qq
   ws-opts:
-    path: /GOrbEh
-- name: (20) - Бесплатный (VLESS)
+    path: /
+- name: (14) - Бесплатный (VLESS)
   type: vless
-  server: 2.27.208.9
+  server: fast.iqiraq.shop
   port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
+  udp: true
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  ws-opts: {}
+- name: (15) - Бесплатный (VLESS)
+  type: vless
+  server: milan.adaspoloandco.com
+  port: 8443
+  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  udp: true
+  network: ws
+  tls: true
+  servername: milan.adaspoloandco.com
+  client-fingerprint: qq
+  ws-opts:
+    path: /RoBeRt
+- name: '(16) - 🇬🇧 Великобритания #1 t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: 8e16742a-78d5-4327-9052-f86a9ce50f49
   udp: true
   network: tcp
   tls: true
-  servername: fin4.freeinternat.com
+  servername: www.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SIBS0hevQuPeJiBQUoN5MYq8Gs_ZWyBlkHK6miz__kM
+    short-id: 90decc62dab9873f
+- name: (17) - Бесплатный (VLESS)
+  type: vless
+  server: 104.105.28.51
+  port: 443
+  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
+  udp: true
+  network: ws
+  tls: true
+  servername: fast.iqiraq.shop
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+- name: (18) - Бесплатный (VLESS)
+  type: vless
+  server: 2.27.23.115
+  port: 443
+  uuid: d53f098c-c146-4c16-b8fc-263743fdb6b3
+  udp: true
+  network: tcp
+  tls: true
+  servername: swplay.tgflow.me
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-- name: (21) - Бесплатный (VLESS)
+    public-key: qoahUemfDpTEl1IMf8gMj4RIDILO2dT0MKWVMvRCrU4
+    short-id: b0982475784c64cc
+- name: (19) - Бесплатный (VLESS)
   type: vless
   server: fin4.freeinternat.com
   port: 443
@@ -284,43 +244,86 @@ proxies:
   reality-opts:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
+- name: (20) - Бесплатный (VLESS)
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  client-fingerprint: qq
+  ws-opts:
+    path: /GOrbEh
+- name: (21) - Бесплатный (VLESS)
+  type: vless
+  server: 2.27.208.9
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  udp: true
+  network: tcp
+  tls: true
+  servername: fin4.freeinternat.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
 - name: (22) - Бесплатный (VLESS)
   type: vless
-  server: chopin.adaspoloandco.com
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  client-fingerprint: qq
-  ws-opts:
-    path: /download.php
-- name: (23) - Бесплатный (VLESS)
-  type: vless
-  server: 104.105.28.51
+  server: rrr.windconnect.pro
   port: 443
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: fast.iqiraq.shop
-  client-fingerprint: qq
-  ws-opts:
-    path: /
+  servername: rrr.windconnect.pro
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
+    short-id: 4da5d1853f04af6d
+- name: (23) - ! (VLESS)
+  type: vless
+  server: 91.224.87.22
+  port: 9882
+  uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 - name: (24) - Бесплатный (VLESS)
   type: vless
-  server: 72.56.115.125
-  port: 443
-  uuid: 4e25f371-acc5-4eb6-afb3-b763ee75537d
+  server: 195.172.139.150
+  port: 23816
+  uuid: 881b936b-2591-4ea8-d21d-8215a36d41a3
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: rotterdam.korgivps.ru
+  servername: node.qingyi668.biz
   client-fingerprint: firefox
-  ws-opts:
-    path: /api/user
 - name: (25) - Бесплатный (VLESS)
+  type: vless
+  server: 138.124.8.117
+  port: 443
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  udp: true
+  network: tcp
+  tls: true
+  servername: fin2.helper-internet.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+- name: (26) - Бесплатный (VLESS)
   type: vless
   server: lat2.freeinternat.com
   port: 443
@@ -334,73 +337,132 @@ proxies:
   reality-opts:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
-- name: (26) - Бесплатный (VLESS)
+- name: (27) - 14 (VLESS)
   type: vless
-  server: 2.26.21.228
+  server: 72.56.115.125
   port: 443
-  uuid: 6869eae5-a050-4410-9d16-a945310f7cbc
+  uuid: 4e25f371-acc5-4eb6-afb3-b763ee75537d
   udp: true
   network: ws
   tls: true
-  servername: 2.26.21.228
+  servername: rotterdam.korgivps.ru
+  client-fingerprint: firefox
   ws-opts:
-    path: /ws
-- name: (27) - Бесплатный (VLESS)
-  type: vless
-  server: fast.iqiraq.shop
-  port: 443
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  ws-opts: {}
+    path: /api/user
 - name: (28) - Бесплатный (VLESS)
   type: vless
-  server: fin2.helper-internet.com
+  server: 31.76.62.223
   port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
   udp: true
   network: tcp
   tls: true
-  servername: fin2.helper-internet.com
+  servername: lat2.freeinternat.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
+- name: (29) - Бесплатный (VLESS)
+  type: vless
+  server: 2.27.132.119
+  port: 8881
+  uuid: fcbbc0e9-bbc3-4f9b-adba-7641318f872b
+  udp: true
+  network: tcp
+  tls: true
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pgdZI2R_VfdbedBJyFKxzSvYUa7oFbiApSTKBooSqCk
+- name: (30) - 621.🌐Неизвестно | @LimeVPNFREE t.me/rjsxrd (VLESS)
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
+- name: (31) - Бесплатный (VLESS)
+  type: vless
+  server: 35.236.181.11
+  port: 35190
+  uuid: 97e46b0b-d27c-4e94-aa00-034e29acd046
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.sony.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5v2iiibdxSDD2c7acIZ93kROtWHBTNTe0ea5EEMUHRk
+    short-id: 0296fcb7c578
+- name: '(32) - 🇬🇧 Великобритания #2 t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: f2816a01-3555-4e79-9e26-770f050ea55a
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bRDaP068YgdwwdQgenUvKTNfPjIB_Dy-lJDFC9ZZEXU
+    short-id: 632a146bd581641a
+- name: (33) - Бесплатный (VLESS)
+  type: vless
+  server: 139.59.124.172
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  udp: true
+  network: tcp
+  tls: true
+  servername: 8.sahanwickramasinghe.me
+  client-fingerprint: firefox
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)
+  - (01) - Server 3 (VLESS)
   - '(02) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
-  - (03) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
-  - (04) - Server 3 (VLESS)
+  - (03) - Бесплатный (VLESS)
+  - (04) - Бесплатный (VLESS)
   - (05) - Бесплатный (VLESS)
   - (06) - Бесплатный (VLESS)
   - (07) - Бесплатный (VLESS)
   - (08) - Бесплатный (VLESS)
-  - (09) - 7025 (VLESS)
-  - (10) - Бесплатный (VLESS)
-  - (11) - 6 (VLESS)
-  - (12) - ! (VLESS)
-  - (13) - Бесплатный (VLESS)
-  - (14) - ! (VLESS)
+  - (09) - Бесплатный (VLESS)
+  - (10) - ! (VLESS)
+  - (11) - Бесплатный (VLESS)
+  - (12) - 3 (VLESS)
+  - (13) - ! (VLESS)
+  - (14) - Бесплатный (VLESS)
   - (15) - Бесплатный (VLESS)
-  - (16) - 12 (VLESS)
+  - '(16) - 🇬🇧 Великобритания #1 t.me/rjsxrd (VLESS)'
   - (17) - Бесплатный (VLESS)
   - (18) - Бесплатный (VLESS)
   - (19) - Бесплатный (VLESS)
   - (20) - Бесплатный (VLESS)
   - (21) - Бесплатный (VLESS)
   - (22) - Бесплатный (VLESS)
-  - (23) - Бесплатный (VLESS)
+  - (23) - ! (VLESS)
   - (24) - Бесплатный (VLESS)
   - (25) - Бесплатный (VLESS)
   - (26) - Бесплатный (VLESS)
-  - (27) - Бесплатный (VLESS)
+  - (27) - 14 (VLESS)
   - (28) - Бесплатный (VLESS)
+  - (29) - Бесплатный (VLESS)
+  - (30) - 621.🌐Неизвестно | @LimeVPNFREE t.me/rjsxrd (VLESS)
+  - (31) - Бесплатный (VLESS)
+  - '(32) - 🇬🇧 Великобритания #2 t.me/rjsxrd (VLESS)'
+  - (33) - Бесплатный (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
