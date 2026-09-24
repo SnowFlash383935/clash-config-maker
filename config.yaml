@@ -3,161 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - 🇺🇸 United States | @RaViraNet t.me/rjsxrd (VLESS)
-  type: vless
-  server: 5.78.139.175
-  port: 80
-  uuid: 695fdf80-e4f8-400f-bb42-f9fdcb8e8267
-  udp: true
-  network: tcp
-  tls: true
-  servername: 5.78.139.175
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Si3nHb-uXwCpAXeH8H3WkhfSvRVk6Q5oL5ej04WPglI
-    short-id: 81c2dc2ca4e93afc
-- name: (02) - 🇺🇸 United States | @RaViraNet t.me/rjsxrd (VLESS)
-  type: vless
-  server: 5.78.159.214
-  port: 80
-  uuid: 52ecd83b-b6c1-41ee-bc36-049755bd33d2
-  udp: true
-  network: raw
-  tls: true
-  servername: 5.78.159.214
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NTXb7QGg9EyPkpG-7lmBNNaqf4473p_l8ITmTH-xmHg
-    short-id: 0db5c018ed7bb596
-- name: (03) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (04) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 216.152.152.187
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (05) - 🇺🇸 United States | @RaViraNet t.me/rjsxrd (VLESS)
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 8a02c9f7-936a-4d78-a88f-c1e9229f4d5d
-  udp: true
-  network: tcp
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-- name: (06) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (07) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: guanwang.awsno.com
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: '(08) - 🇺🇸 [VL] США #2601 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 79.141.172.154
-  port: 10453
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: (09) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: guanwang.awsno.com
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: (10) - CF中转_092402297 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: 1d54a125-8f1e-46bb-9a23-0ecf4ac92db8
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn-ca.skyvora.app
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fqg7aacd8s
-    headers:
-      Host: cdn-ca.skyvora.app
-- name: (11) - CF中转_092402298 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 1d54a125-8f1e-46bb-9a23-0ecf4ac92db8
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn-ca.skyvora.app
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fqg7aacd8s
-    headers:
-      Host: cdn-ca.skyvora.app
-- name: (12) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)
-  type: vless
-  server: 169.40.42.173
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: (13) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
+- name: (01) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
   type: vless
   server: 169.40.42.179
   port: 443
@@ -171,21 +17,20 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: '(14) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
+- name: (02) - [OpenRay] 🇨🇦 CA-29549 (VLESS)
   type: vless
-  server: 169.40.42.15
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
   network: tcp
   tls: true
-  servername: yahoo.com
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: (15) - Server 3 (VLESS)
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+- name: (03) - Server 3 (VLESS)
   type: vless
   server: 169.40.42.184
   port: 443
@@ -199,160 +44,21 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: '(16) - 🇩🇪 [VL] Германия #1810 | РосТуннель t.me/rjsxrd (VLESS)'
+- name: '(04) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
   type: vless
-  server: de-1.ff-id.xyz
-  port: 6215
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
-  udp: true
-  network: grpc
-  tls: true
-  servername: cdn.astranet.ignorelist.com
-  grpc-opts:
-    grpc-service-name: api.v1.ApiService
-- name: (17) - 英国_092402335 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 91.193.17.156
-  port: 9458
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.google.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  grpc-opts:
-    grpc-service-name: TunService
-- name: (18) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 146.56.112.110
-  port: 8888
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (19) - 英国_092402363 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 31.76.39.141
+  server: 169.40.42.15
   port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   network: tcp
   tls: true
-  servername: gb.superbuba.top
+  servername: yahoo.com
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-- name: (20) - 🇳🇱 The Netherlands | @RaViraNet t.me/rjsxrd (VLESS)
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 757e753e-85e2-482e-a29b-852ad193bc5f
-  udp: true
-  network: tcp
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-- name: '(21) - 🇬🇧 [VL] Великобритания #3673 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: greatbritain.lavivas.org
-  port: 7443
-  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
-  udp: true
-  network: grpc
-  tls: true
-  servername: greatbritain.lavivas.org
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-- name: (22) - 🇵🇱Обходы (VLESS)
-  type: vless
-  server: 176.123.161.222
-  port: 9892
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '(23) - 🇳🇱 [VL] Нидерланды #3251 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: slowkd.sadiepinki.com
-  port: 443
-  uuid: 71091100-c6ed-41fa-84ac-acf7ff9eeb7f
-  udp: true
-  network: tcp
-  tls: true
-  servername: slowkd.sadiepinki.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
-    short-id: 9c2378562188c3cb
-- name: (24) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 169.197.143.116
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: '(25) - 🇷🇺 [VL] Россия #3381 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 176.108.243.18
-  port: 9872
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
-    short-id: aabb
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '(26) - 🇳🇱 [VL] Нидерланды #3202 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 51.158.206.103
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (27) - 🇮🇩 (VLESS)
-  type: vless
-  server: 31.56.189.27
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  network: tcp
-  tls: true
-  servername: srv-21bac9.vless.monster
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: 1bcc9177f3124b25
-- name: (28) - 阿联酋_092402074 t.me/rjsxrd (VLESS)
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: '(05) - 🇬🇷 [VL] Греция #9461 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
   server: 77.110.104.125
   port: 8443
@@ -367,30 +73,151 @@ proxies:
     short-id: 2da4299da566b7
   grpc-opts:
     grpc-service-name: your-custom-path
-- name: (29) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (30) - 法国_092402049 t.me/rjsxrd (VLESS)
+- name: (06) - ! (VLESS)
   type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  server: 213.171.25.29
+  port: 9889
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: (07) - ! (VLESS)
+  type: vless
+  server: 176.108.246.58
+  port: 9889
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '(08) - 226. 🇸🇪 VLESS | SNI: dl.google.com | CIDR: ? | TG: @wlrustg t.me/rjsxrd
+    (VLESS)'
+  type: vless
+  server: 176.108.246.58
+  port: 9881
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '(09) - 🇷🇺 [VL] Россия #3363 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 213.171.25.178
+  port: 9830
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '(10) - 🇫🇷 [VL] Франция #3561 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: fra.loozerp.wiki
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
   network: tcp
   tls: true
-  servername: fuck.rkn
+  servername: fra.loozerp.wiki
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+- name: '(11) - 🇮🇸 [VL] Исландия #11526 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 212.46.33.90
+  port: 443
+  uuid: 71091100-c6ed-41fa-84ac-acf7ff9eeb7f
+  udp: true
+  network: tcp
+  tls: true
+  servername: slowkd.sadiepinki.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
+    short-id: 9c2378562188c3cb
+- name: '(12) - 🇺🇸 [VL] США #1590 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: slowkd.sadiepinki.com
+  port: 443
+  uuid: dac0bd30-008f-42c9-b377-bfc0dcfa6f0b
+  udp: true
+  network: tcp
+  tls: true
+  servername: slowkd.sadiepinki.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
+    short-id: 9c2378562188c3cb
+- name: '(13) - 🇷🇺 [VL] Россия #3294 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 176.123.162.100
+  port: 9880
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '(14) - 🇯🇵 [VL] Япония #10034 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 212.46.33.5
+  port: 443
+  uuid: 71091100-c6ed-41fa-84ac-acf7ff9eeb7f
+  udp: true
+  network: tcp
+  tls: true
+  servername: slowkd.sadiepinki.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (31) - ! (VLESS)
+    public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
+    short-id: 9c2378562188c3cb
+- name: '(15) - 🇷🇺 [VL] Россия #3343 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '(16) - 🇺🇸 [VL] США #1547 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
   server: xinnusvpn.duckdns.org
   port: 8443
@@ -404,41 +231,7 @@ proxies:
     path: /wsnl
     headers:
       Host: xinnusvpn.duckdns.org
-- name: '(32) - 🇩🇪 [VL] Германия #1831 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 2.26.53.224
-  port: 5432
-  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
-  udp: true
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: '(33) - 🇳🇱 [VL] Нидерланды #3259 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 136.148.71.152
-  port: 7444
-  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
-  udp: true
-  network: tcp
-  tls: true
-  servername: de777.lavivas.org
-  flow: xtls-rprx-vision
-- name: (34) - 🇩🇪 机场推荐:dafei.de 德国 08 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 31.76.69.58
-  port: 443
-  uuid: 61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8
-  udp: true
-  network: tcp
-  tls: true
-  servername: fastly.jsdelivr.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J9-352rPmu8GybqIDnC22sE3zs6Vg8tnMbbi-DyLFR8
-    short-id: 830b93d6a086e00e
-- name: '(35) - 🇩🇪 [VL] Германия #1695 | РосТуннель t.me/rjsxrd (VLESS)'
+- name: '(17) - 🇩🇪 [VL] Германия #1779 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
   server: 64.188.79.106
   port: 443
@@ -452,35 +245,7 @@ proxies:
   reality-opts:
     public-key: dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg
     short-id: 992e5a9a
-- name: (36) - CF中转_0924023272 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 214bf4c5-045a-4ddb-944b-e2eef9b33338
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn-fr.skyvora.app
-  client-fingerprint: chrome
-  ws-opts:
-    path: /9hf8a67dhf
-    headers:
-      Host: cdn-fr.skyvora.app
-- name: '(37) - 🇲🇩 [VL] Молдова #9056 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 185.103.167.76
-  port: 4443
-  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
-  udp: true
-  network: tcp
-  tls: true
-  servername: moldova.cdn-europe.org
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
-    short-id: 694ee64512cfcbef
-- name: (38) - 英国_092402087 t.me/rjsxrd (VLESS)
+- name: '(18) - 🇨🇿 [VL] Чехия #7189 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
   server: 31.76.7.154
   port: 7443
@@ -494,61 +259,45 @@ proxies:
   reality-opts:
     public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
     short-id: d2061bb1
-- name: '(39) - 🇫🇮 [VL] Финляндия #4064 | РосТуннель t.me/rjsxrd (VLESS)'
+- name: (19) - 日期：09-23 t.me/rjsxrd (VLESS)
   type: vless
-  server: 95.217.24.236
-  port: 2087
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  server: 31.76.113.212
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
   network: tcp
   tls: true
-  servername: 62.238.41.21
-  client-fingerprint: chrome
+  servername: italia.superbuba.top
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-- name: '(40) - 🇷🇺 [VL] Россия #3349 | РосТуннель t.me/rjsxrd (VLESS)'
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+- name: '(20) - 🇩🇪 [VL] Германия #1682 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
-  server: 176.109.104.195
-  port: 9873
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '(41) - 🇳🇱 [VL] Нидерланды #3267 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: de777.lavivas.org
-  port: 7444
-  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
+  server: 193.58.121.224
+  port: 5432
+  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
   udp: true
   network: tcp
   tls: true
+  client-fingerprint: safari
   flow: xtls-rprx-vision
-- name: '(42) - 7. 🇺🇸 VLESS | SNI: dl.google.com | CIDR: ? | TG: @wlrustg t.me/rjsxrd
-    (VLESS)'
+- name: '(21) - 🇫🇷 [VL] Франция #9246 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
-  server: 176.108.246.73
-  port: 9873
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  server: 104.21.8.201
+  port: 2096
+  uuid: 214bf4c5-045a-4ddb-944b-e2eef9b33338
   udp: true
-  network: grpc
+  network: ws
   tls: true
-  servername: dl.google.com
+  servername: cdn-fr.skyvora.app
   client-fingerprint: chrome
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '(43) - 🇹🇷 [VL] Турция #4411 | РосТуннель t.me/rjsxrd (VLESS)'
+  ws-opts:
+    path: /9hf8a67dhf
+    headers:
+      Host: cdn-fr.skyvora.app
+- name: '(22) - 🇹🇷 [VL] Турция #4371 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
   server: 185.71.219.128
   port: 2052
@@ -558,47 +307,49 @@ proxies:
   tls: true
   servername: 185.71.219.128
   client-fingerprint: ios
-- name: (44) - [OpenRay] 🇨🇦 CA-29771 (VLESS)
+- name: '(23) - 🇩🇪 [VL] Германия #9203 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: 172.67.130.159
+  port: 2096
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
   udp: true
   network: ws
   tls: true
-  servername: v2ray.simspeedup.com
+  servername: cdn-de.skyvora.app
+  client-fingerprint: chrome
   ws-opts:
-    path: /ws
+    path: /3cagtz3
     headers:
-      Host: v2ray.simspeedup.com
-- name: (45) - [OpenRay] 🇨🇦 CA-29638 (VLESS)
+      Host: cdn-de.skyvora.app
+- name: '(24) - 🇲🇩 [VL] Молдова #9059 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: moldova.cdn-europe.org
+  port: 4443
+  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: v2ray.simspeedup.com
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: (46) - [OpenRay] 🇨🇦 CA-29772 (VLESS)
+  servername: moldova.cdn-europe.org
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+    short-id: 694ee64512cfcbef
+- name: '(25) - 🇲🇩 [VL] Молдова #9060 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: 185.103.167.76
+  port: 4443
+  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: v2ray.simspeedup.com
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: (47) - CF中转_0924022319 t.me/rjsxrd (VLESS)
+  servername: moldova.cdn-europe.org
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+    short-id: 694ee64512cfcbef
+- name: (26) - CF中转_0924061926 t.me/rjsxrd (VLESS)
   type: vless
   server: 104.21.8.201
   port: 2096
@@ -612,35 +363,7 @@ proxies:
     path: /hux9duzm54
     headers:
       Host: cdn.skyvora.app
-- name: (48) - CF中转_0924023619 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: bdc5e450-3e2d-4001-928e-e3bc6cecb249
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.skyvora.app
-  client-fingerprint: chrome
-  ws-opts:
-    path: /hux9duzm54
-    headers:
-      Host: cdn.skyvora.app
-- name: '(49) - 🇷🇺 [VL] Россия #3339 | РосТуннель t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 176.108.246.58
-  port: 9881
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '(50) - 🇷🇺 [VL] Россия #3373 | РосТуннель t.me/rjsxrd (VLESS)'
+- name: '(27) - 🇷🇺 [VL] Россия #3373 | РосТуннель t.me/rjsxrd (VLESS)'
   type: vless
   server: 144.31.50.236
   port: 443
@@ -654,61 +377,250 @@ proxies:
   reality-opts:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
+- name: '(28) - 🇸🇪 [VL] Швеция #4464 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 143.246.196.122
+  port: 443
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
+  udp: true
+  network: raw
+  tls: true
+  servername: www.blocket.se
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+- name: '(29) - 🇸🇬 [VL] Сингапур #9758 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 217.144.188.131
+  port: 443
+  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  udp: true
+  network: tcp
+  tls: true
+  servername: admin.vkroom-it-service.xyz
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RoZB6zAaInm8X5feCKpL0_wMZRQYxQHWsirP0SYum2g
+    short-id: f3a9c21e8b6d4571
+- name: '(30) - 🇷🇺 Russian Federation | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  type: vless
+  server: prep.wwwinternetvideo.click
+  port: 443
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  udp: true
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+- name: (31) - [OpenRay] 🇨🇦 CA-29044 (SS)
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: '(32) - 🇺🇸 [VL] США #2901 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 45.86.245.107
+  port: 5865
+  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  udp: true
+  network: tcp
+  tls: true
+  servername: ru.vkroom-it-service.xyz
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1UlHWXQ11dMmBYHq7XYsyKnfPVGTh9UssmiJE_zRnjI
+    short-id: a4f7c2e91b6d8035
+- name: '(33) - 🇳🇱 [VL] Нидерланды #3251 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  network: ws
+  tls: true
+  servername: fbsv6.guardora.pro
+  client-fingerprint: firefox
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: '(34) - 🇫🇮 [VL] Финляндия #4048 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 95.217.24.236
+  port: 2087
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  udp: true
+  network: tcp
+  tls: true
+  servername: 62.238.41.21
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+- name: '(35) - 🇷🇺 [VL] Россия #3381 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 176.108.243.18
+  port: 9872
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '(36) - 🇨🇭 [VL] Швейцария #4472 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 34.65.54.139
+  port: 443
+  uuid: bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI
+    short-id: 5214a92cad4ad90e
+- name: '(37) - 🇩🇪 [VL] Германия #1851 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: gerwai1488.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  network: tcp
+  tls: true
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+- name: '(38) - 🇸🇪 [VL] Швеция #4466 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 5.157.10.148
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  network: tcp
+  tls: true
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+- name: '(39) - 🇦🇹 [VL] Австрия #1556 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: gb.superbuba.top
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  network: tcp
+  tls: true
+  servername: gb.superbuba.top
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+- name: '(40) - 🇪🇪 [VL] Эстония #9791 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: fintanil228.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  network: tcp
+  tls: true
+  servername: fintanil228.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+- name: (41) - 🇸🇨_塞舌尔_11 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  network: tcp
+  tls: true
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+- name: '(42) - 🇳🇱 [VL] Нидерланды #3248 | РосТуннель t.me/rjsxrd (VLESS)'
+  type: vless
+  server: de777.lavivas.org
+  port: 7444
+  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
+  udp: true
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - 🇺🇸 United States | @RaViraNet t.me/rjsxrd (VLESS)
-  - (02) - 🇺🇸 United States | @RaViraNet t.me/rjsxrd (VLESS)
-  - (03) -  t.me/rjsxrd (VMESS)
-  - (04) -  t.me/rjsxrd (VMESS)
-  - (05) - 🇺🇸 United States | @RaViraNet t.me/rjsxrd (VLESS)
-  - (06) -  t.me/rjsxrd (VMESS)
-  - (07) -  t.me/rjsxrd (VMESS)
-  - '(08) - 🇺🇸 [VL] США #2601 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (09) -  t.me/rjsxrd (VMESS)
-  - (10) - CF中转_092402297 t.me/rjsxrd (VLESS)
-  - (11) - CF中转_092402298 t.me/rjsxrd (VLESS)
-  - (12) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)
-  - (13) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
-  - '(14) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
-  - (15) - Server 3 (VLESS)
-  - '(16) - 🇩🇪 [VL] Германия #1810 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (17) - 英国_092402335 t.me/rjsxrd (VLESS)
-  - (18) -  t.me/rjsxrd (VMESS)
-  - (19) - 英国_092402363 t.me/rjsxrd (VLESS)
-  - (20) - 🇳🇱 The Netherlands | @RaViraNet t.me/rjsxrd (VLESS)
-  - '(21) - 🇬🇧 [VL] Великобритания #3673 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (22) - 🇵🇱Обходы (VLESS)
-  - '(23) - 🇳🇱 [VL] Нидерланды #3251 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (24) -  t.me/rjsxrd (VMESS)
-  - '(25) - 🇷🇺 [VL] Россия #3381 | РосТуннель t.me/rjsxrd (VLESS)'
-  - '(26) - 🇳🇱 [VL] Нидерланды #3202 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (27) - 🇮🇩 (VLESS)
-  - (28) - 阿联酋_092402074 t.me/rjsxrd (VLESS)
-  - (29) -  t.me/rjsxrd (VMESS)
-  - (30) - 法国_092402049 t.me/rjsxrd (VLESS)
-  - (31) - ! (VLESS)
-  - '(32) - 🇩🇪 [VL] Германия #1831 | РосТуннель t.me/rjsxrd (VLESS)'
-  - '(33) - 🇳🇱 [VL] Нидерланды #3259 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (34) - 🇩🇪 机场推荐:dafei.de 德国 08 t.me/rjsxrd (VLESS)
-  - '(35) - 🇩🇪 [VL] Германия #1695 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (36) - CF中转_0924023272 t.me/rjsxrd (VLESS)
-  - '(37) - 🇲🇩 [VL] Молдова #9056 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (38) - 英国_092402087 t.me/rjsxrd (VLESS)
-  - '(39) - 🇫🇮 [VL] Финляндия #4064 | РосТуннель t.me/rjsxrd (VLESS)'
-  - '(40) - 🇷🇺 [VL] Россия #3349 | РосТуннель t.me/rjsxrd (VLESS)'
-  - '(41) - 🇳🇱 [VL] Нидерланды #3267 | РосТуннель t.me/rjsxrd (VLESS)'
-  - '(42) - 7. 🇺🇸 VLESS | SNI: dl.google.com | CIDR: ? | TG: @wlrustg t.me/rjsxrd
+  - (01) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
+  - (02) - [OpenRay] 🇨🇦 CA-29549 (VLESS)
+  - (03) - Server 3 (VLESS)
+  - '(04) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
+  - '(05) - 🇬🇷 [VL] Греция #9461 | РосТуннель t.me/rjsxrd (VLESS)'
+  - (06) - ! (VLESS)
+  - (07) - ! (VLESS)
+  - '(08) - 226. 🇸🇪 VLESS | SNI: dl.google.com | CIDR: ? | TG: @wlrustg t.me/rjsxrd
     (VLESS)'
-  - '(43) - 🇹🇷 [VL] Турция #4411 | РосТуннель t.me/rjsxrd (VLESS)'
-  - (44) - [OpenRay] 🇨🇦 CA-29771 (VLESS)
-  - (45) - [OpenRay] 🇨🇦 CA-29638 (VLESS)
-  - (46) - [OpenRay] 🇨🇦 CA-29772 (VLESS)
-  - (47) - CF中转_0924022319 t.me/rjsxrd (VLESS)
-  - (48) - CF中转_0924023619 t.me/rjsxrd (VLESS)
-  - '(49) - 🇷🇺 [VL] Россия #3339 | РосТуннель t.me/rjsxrd (VLESS)'
-  - '(50) - 🇷🇺 [VL] Россия #3373 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(09) - 🇷🇺 [VL] Россия #3363 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(10) - 🇫🇷 [VL] Франция #3561 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(11) - 🇮🇸 [VL] Исландия #11526 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(12) - 🇺🇸 [VL] США #1590 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(13) - 🇷🇺 [VL] Россия #3294 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(14) - 🇯🇵 [VL] Япония #10034 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(15) - 🇷🇺 [VL] Россия #3343 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(16) - 🇺🇸 [VL] США #1547 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(17) - 🇩🇪 [VL] Германия #1779 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(18) - 🇨🇿 [VL] Чехия #7189 | РосТуннель t.me/rjsxrd (VLESS)'
+  - (19) - 日期：09-23 t.me/rjsxrd (VLESS)
+  - '(20) - 🇩🇪 [VL] Германия #1682 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(21) - 🇫🇷 [VL] Франция #9246 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(22) - 🇹🇷 [VL] Турция #4371 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(23) - 🇩🇪 [VL] Германия #9203 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(24) - 🇲🇩 [VL] Молдова #9059 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(25) - 🇲🇩 [VL] Молдова #9060 | РосТуннель t.me/rjsxrd (VLESS)'
+  - (26) - CF中转_0924061926 t.me/rjsxrd (VLESS)
+  - '(27) - 🇷🇺 [VL] Россия #3373 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(28) - 🇸🇪 [VL] Швеция #4464 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(29) - 🇸🇬 [VL] Сингапур #9758 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(30) - 🇷🇺 Russian Federation | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  - (31) - [OpenRay] 🇨🇦 CA-29044 (SS)
+  - '(32) - 🇺🇸 [VL] США #2901 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(33) - 🇳🇱 [VL] Нидерланды #3251 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(34) - 🇫🇮 [VL] Финляндия #4048 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(35) - 🇷🇺 [VL] Россия #3381 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(36) - 🇨🇭 [VL] Швейцария #4472 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(37) - 🇩🇪 [VL] Германия #1851 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(38) - 🇸🇪 [VL] Швеция #4466 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(39) - 🇦🇹 [VL] Австрия #1556 | РосТуннель t.me/rjsxrd (VLESS)'
+  - '(40) - 🇪🇪 [VL] Эстония #9791 | РосТуннель t.me/rjsxrd (VLESS)'
+  - (41) - 🇸🇨_塞舌尔_11 t.me/rjsxrd (VLESS)
+  - '(42) - 🇳🇱 [VL] Нидерланды #3248 | РосТуннель t.me/rjsxrd (VLESS)'
   - DIRECT
 rules:
 - MATCH,TOP
