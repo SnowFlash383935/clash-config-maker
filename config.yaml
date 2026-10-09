@@ -3,45 +3,37 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+- name: (01) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
   udp: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: (02) - Бесплатный (VLESS)
+  network: tcp
+- name: (02) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (03) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
   type: vless
-  server: 92.118.112.249
-  port: 443
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
   udp: true
   network: tcp
   tls: true
-  servername: us-root.sworkingvpn.com
-  client-fingerprint: firefox
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-- name: (03) - Server 3 (VLESS)
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
 - name: (04) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)
   type: vless
   server: 169.40.42.173
@@ -70,21 +62,50 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: (06) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+- name: (06) - Server 3 (VLESS)
   type: vless
-  server: 172.66.1.43
+  server: 169.40.42.184
   port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: x.m-90.xyz
+  servername: yahoo.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: (07) - 🇷🇺 Russia | @RaViraNet t.me/rjsxrd (VLESS)
+  type: vless
+  server: 31.59.210.24
+  port: 2087
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.yandex.ru
+  client-fingerprint: ios
+  reality-opts:
+    public-key: W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI
+    short-id: a11023050f134216
+  grpc-opts:
+    grpc-service-name: astracat
+- name: (08) - 法国_100904047 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 51.158.206.86
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  network: tcp
+  tls: true
+  servername: fuck.rkn
   client-fingerprint: chrome
-  ws-opts:
-    path: /t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- name: (07) - 🇷🇺 俄罗斯 | RUS t.me/rjsxrd (VLESS)
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: (09) - 🇺🇿 (VLESS)
   type: vless
   server: 193.202.113.5
   port: 443
@@ -93,12 +114,26 @@ proxies:
   network: tcp
   tls: true
   servername: edge-uk2.mystatic-cdn.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI
     short-id: ee169e93d3c277a1
-- name: (08) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+- name: (10) - 1 (VLESS)
+  type: vless
+  server: 72.56.85.221
+  port: 443
+  uuid: ca990a85-cb33-44af-bb17-61b30b43d51e
+  udp: true
+  network: raw
+  tls: true
+  servername: apple.com
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uTOxHZkQuw_YnO3GEIV0jDkVNOsOPQrTIPdRb2Rk8DQ
+    short-id: 00353c
+- name: (11) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -112,229 +147,52 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (09) - 🇫🇷 (VLESS)
+- name: (12) - 美国_100904047 t.me/rjsxrd (VLESS)
   type: vless
-  server: 62.210.91.10
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  server: 13.143.172.203
+  port: 443
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
   udp: true
   network: tcp
   tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (10) - Бесплатный (VLESS)
+- name: (13) - 🇬🇧 (VLESS)
   type: vless
-  server: 50.7.157.237
-  port: 443
-  uuid: a6be94fc-e742-4714-8a38-c8d7410ae066
-  udp: true
-  network: tcp
-  tls: true
-  servername: edge-fr.extazy.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
-    short-id: ba4b2afa9e7193ea
-- name: (11) - 🇷🇺 Russia | @RaViraNet t.me/rjsxrd (VLESS)
-  type: vless
-  server: 31.59.210.37
-  port: 443
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.yandex.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  grpc-opts:
-    grpc-service-name: astracat
-- name: (12) - AetrisVPN (VLESS)
-  type: vless
-  server: 31.59.210.24
-  port: 2087
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: W2OLbQ682PLJ9yHQ21Q0nPJk9U8RuL5YnlP-U1fdQzI
-    short-id: a11023050f134216
-  grpc-opts:
-    grpc-service-name: astracat
-- name: (13) - [1026ms (VLESS)
-  type: vless
-  server: www.large-files.info
+  server: node-uk.connectsuite.org
   port: 8443
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  udp: true
-  network: ws
-  tls: true
-  servername: www.large-files.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
-    headers:
-      Host: www.large-files.info
-- name: (14) - AetrisVPN (VLESS)
-  type: vless
-  server: 72.56.85.221
-  port: 443
-  uuid: ca990a85-cb33-44af-bb17-61b30b43d51e
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   udp: true
   network: tcp
   tls: true
-  servername: apple.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uTOxHZkQuw_YnO3GEIV0jDkVNOsOPQrTIPdRb2Rk8DQ
-    short-id: 00353c
-- name: (15) - Бесплатный (VLESS)
+- name: (14) - 英国_100904317 t.me/rjsxrd (VLESS)
   type: vless
-  server: sweth.ali-bard.online
-  port: 443
-  uuid: 15c9be2b-20f1-47b7-bf33-747ed1ff7fb7
+  server: 51.38.71.147
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   udp: true
   network: tcp
   tls: true
-  servername: sweth.ali-bard.online
+  servername: node-uk.connectsuite.org
   client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-- name: (16) - Бесплатный (VLESS)
-  type: vless
-  server: 61.18.134.10
-  port: 443
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-  udp: true
-  network: ws
-  tls: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  client-fingerprint: firefox
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: (17) -  t.me/rjsxrd (VMESS)
+- name: (15) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: uk2-2.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
   alterId: 0
   cipher: auto
   udp: true
-  network: ws
-  tls: true
-  servername: server3.9966338.xyz
-  ws-opts:
-    path: /waetasiuofguiwer?ed=2560
-    headers:
-      Host: server3.9966338.xyz
-- name: (18) - AetrisVPN (VLESS)
-  type: vless
-  server: 3.39.4.109
-  port: 18967
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
-  network: raw
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-- name: (19) - AetrisVPN (VLESS)
-  type: vless
-  server: 3.39.4.109
-  port: 13672
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  udp: true
   network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-- name: (20) - 🇪🇪 (VLESS)
+- name: (16) - 🇵🇱 (VLESS)
   type: vless
-  server: 77.72.85.246
+  server: pl.flen-vpn.xyz
   port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  network: ws
-  tls: true
-  servername: fdghyt.com
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: (21) - [1040ms (VLESS)
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  network: ws
-  tls: true
-  servername: fdghyt.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: (22) - @GozargahAzad|🇺🇸 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 159.89.87.21
-  port: 28190
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   network: tcp
   tls: true
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-- name: (23) - 🇮🇳 (VLESS)
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-- name: (24) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-- name: (25) - Бесплатный (VLESS)
+  servername: pl.flen-vpn.xyz
+- name: (17) - 保加利亚_100904001 t.me/rjsxrd (VLESS)
   type: vless
   server: 141.98.7.193
   port: 2083
@@ -343,7 +201,44 @@ proxies:
   network: tcp
   tls: true
   servername: 141.98.7.193
-- name: (26) - 🇨🇭 Switzerland | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
+  client-fingerprint: chrome
+- name: (18) - 🇨🇭 (VLESS)
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+- name: (19) - 🇨🇭 Switzerland | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
+  type: vless
+  server: 188.120.236.224
+  port: 2096
+  uuid: 4f4ba283-2dd7-4eda-9211-63ae357373cf
+  udp: true
+  network: grpc
+  tls: true
+  servername: id.vk.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+- name: (20) - 保加利亚_100904040 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  network: tcp
+  tls: true
+  servername: 141.98.7.193
+- name: (21) - 🇨🇭 Switzerland | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
   type: vless
   server: ns.l90909l.vip
   port: 2096
@@ -352,64 +247,54 @@ proxies:
   network: grpc
   tls: true
   servername: id.vk.com
-  client-fingerprint: edge
+  client-fingerprint: safari
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-- name: (27) - 未知_100819094 t.me/rjsxrd (VLESS)
+- name: (22) - 14 (VLESS)
   type: vless
-  server: freesocks.work
-  port: 2053
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  network: ws
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: (28) - 🇳🇱 荷兰 | NLD t.me/rjsxrd (VLESS)
-  type: vless
-  server: 13.143.172.203
-  port: 2083
-  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  server: 87.242.94.90
+  port: 8443
+  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
   udp: true
   network: tcp
   tls: true
-  servername: 13.143.172.203
+  servername: passport.yandex.ru
   client-fingerprint: firefox
-- name: (29) - CF中转_1008192804 t.me/rjsxrd (VLESS)
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pobC1laHCtpMK1EA520CyOpYeel0t90hEV_eRJExFAE
+    short-id: 20272c52657d22da
+- name: (23) - 保加利亚_100904029 t.me/rjsxrd (VLESS)
   type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: 141.98.7.193
+  port: 8443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
   network: ws
   tls: true
-  servername: fr.api-music-fa.com
+  servername: 141.98.7.193
   client-fingerprint: chrome
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /ws-cdn1-vless
     headers:
-      Host: fr.api-music-fa.com
-- name: (30) - 🇨🇭 Switzerland | 🌐 | [SNI-RU] id.vk.com t.me/rjsxrd (VLESS)
+      Host: de.fastmirror-labs.xyz
+- name: (24) - 芬兰_100904045 t.me/rjsxrd (VLESS)
   type: vless
-  server: 81.94.148.104
-  port: 2096
-  uuid: 4f4ba283-2dd7-4eda-9211-63ae357373cf
+  server: 5.42.99.64
+  port: 8443
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: id.vk.com
-  client-fingerprint: chrome
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-- name: (31) - 🇨🇭 Switzerland | 🌐 | [SNI-RU] id.vk.com (VLESS)
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+- name: (25) - 🇨🇭 Switzerland | 🌐 | [SNI-RU] id.vk.com (VLESS)
   type: vless
   server: bs.l90909l.vip
   port: 2096
@@ -423,87 +308,50 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-- name: (32) - SNi (VLESS)
+- name: (26) - 🇨🇭 Switzerland | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)
   type: vless
-  server: 193.23.195.37
-  port: 8443
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  udp: true
-  network: tcp
-  tls: true
-  servername: ya.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-- name: (33) - [2061ms (VLESS)
-  type: vless
-  server: fr.api-music-fa.com
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  network: ws
-  tls: true
-  servername: fr.api-music-fa.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: (34) - 13 (VLESS)
-  type: vless
-  server: 36a466g.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  server: 188.120.236.239
+  port: 2096
+  uuid: 4f4ba283-2dd7-4eda-9211-63ae357373cf
   udp: true
   network: grpc
   tls: true
-  servername: 36a466g.fi1.h1clayd.click
+  servername: id.vk.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-    short-id: b3c9d0c6bdd114a6
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   grpc-opts:
-    grpc-service-name: 0adb9638509b
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (02) - Бесплатный (VLESS)
-  - (03) - Server 3 (VLESS)
+  - (01) -  t.me/rjsxrd (VMESS)
+  - (02) -  t.me/rjsxrd (VMESS)
+  - (03) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
   - (04) - 🇩🇪telegram➠@v2rayNG_Matsuri (VLESS)
   - (05) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
-  - (06) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  - (07) - 🇷🇺 俄罗斯 | RUS t.me/rjsxrd (VLESS)
-  - (08) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (09) - 🇫🇷 (VLESS)
-  - (10) - Бесплатный (VLESS)
-  - (11) - 🇷🇺 Russia | @RaViraNet t.me/rjsxrd (VLESS)
-  - (12) - AetrisVPN (VLESS)
-  - (13) - [1026ms (VLESS)
-  - (14) - AetrisVPN (VLESS)
-  - (15) - Бесплатный (VLESS)
-  - (16) - Бесплатный (VLESS)
-  - (17) -  t.me/rjsxrd (VMESS)
-  - (18) - AetrisVPN (VLESS)
-  - (19) - AetrisVPN (VLESS)
-  - (20) - 🇪🇪 (VLESS)
-  - (21) - [1040ms (VLESS)
-  - (22) - @GozargahAzad|🇺🇸 t.me/rjsxrd (VLESS)
-  - (23) - 🇮🇳 (VLESS)
-  - (24) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  - (25) - Бесплатный (VLESS)
-  - (26) - 🇨🇭 Switzerland | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
-  - (27) - 未知_100819094 t.me/rjsxrd (VLESS)
-  - (28) - 🇳🇱 荷兰 | NLD t.me/rjsxrd (VLESS)
-  - (29) - CF中转_1008192804 t.me/rjsxrd (VLESS)
-  - (30) - 🇨🇭 Switzerland | 🌐 | [SNI-RU] id.vk.com t.me/rjsxrd (VLESS)
-  - (31) - 🇨🇭 Switzerland | 🌐 | [SNI-RU] id.vk.com (VLESS)
-  - (32) - SNi (VLESS)
-  - (33) - [2061ms (VLESS)
-  - (34) - 13 (VLESS)
+  - (06) - Server 3 (VLESS)
+  - (07) - 🇷🇺 Russia | @RaViraNet t.me/rjsxrd (VLESS)
+  - (08) - 法国_100904047 t.me/rjsxrd (VLESS)
+  - (09) - 🇺🇿 (VLESS)
+  - (10) - 1 (VLESS)
+  - (11) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (12) - 美国_100904047 t.me/rjsxrd (VLESS)
+  - (13) - 🇬🇧 (VLESS)
+  - (14) - 英国_100904317 t.me/rjsxrd (VLESS)
+  - (15) -  t.me/rjsxrd (VMESS)
+  - (16) - 🇵🇱 (VLESS)
+  - (17) - 保加利亚_100904001 t.me/rjsxrd (VLESS)
+  - (18) - 🇨🇭 (VLESS)
+  - (19) - 🇨🇭 Switzerland | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
+  - (20) - 保加利亚_100904040 t.me/rjsxrd (VLESS)
+  - (21) - 🇨🇭 Switzerland | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
+  - (22) - 14 (VLESS)
+  - (23) - 保加利亚_100904029 t.me/rjsxrd (VLESS)
+  - (24) - 芬兰_100904045 t.me/rjsxrd (VLESS)
+  - (25) - 🇨🇭 Switzerland | 🌐 | [SNI-RU] id.vk.com (VLESS)
+  - (26) - 🇨🇭 Switzerland | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
