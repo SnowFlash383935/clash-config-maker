@@ -3,51 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: us16-4.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: server1.9966338.xyz
-  ws-opts:
-    path: /efrsdioy98wert
-    headers:
-      Host: server1.9966338.xyz
-- name: (02) - 🇫🇮_芬兰_16 t.me/rjsxrd (VLESS)
+- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   type: vless
-  server: 95.111.212.241
-  port: 443
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-- name: (03) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
   udp: true
   network: ws
-  tls: true
-  servername: guanwang.awsno.com
   ws-opts:
-    path: /hls/cctv5phd.m3u8
+    path: /usserver
     headers:
-      Host: guanwang.awsno.com
-- name: (04) -  t.me/rjsxrd (VMESS)
+      Host: uspanel.unixzone.us
+- name: (02) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: us5-1.998998.best
   port: 443
@@ -62,15 +29,46 @@ proxies:
     path: /androirfdsreoightrjh?ed=2560
     headers:
       Host: server4.9966338.xyz
-- name: (05) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: (03) - 🇺🇸 机场推荐:dafei.de 美国 34 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 136.107.170.196
+  port: 443
+  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
   udp: true
   network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
+    short-id: 4c69c4b51c580d60
+- name: (04) - 🇫🇮_芬兰_16 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 95.111.212.241
+  port: 443
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+- name: (05) - 🇺🇸 机场推荐:dafei.de 美国 31 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 136.67.16.72
+  port: 443
+  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
+    short-id: bd4aa541e5306ba2
 - name: (06) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
   type: vless
   server: whuiy.xyz
@@ -85,7 +83,58 @@ proxies:
     path: /vless-cdn
     headers:
       Host: whuiy.xyz
-- name: (07) - 伊拉克_101111005 t.me/rjsxrd (VLESS)
+- name: '(07) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: (08) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (09) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: guanwang.awsno.com
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: (10) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+- name: (11) - 伊拉克_101111005 t.me/rjsxrd (VLESS)
   type: vless
   server: 178.17.57.33
   port: 8444
@@ -100,85 +149,33 @@ proxies:
     short-id: 457fab2ac885dbe0
   grpc-opts:
     grpc-service-name: GunService
-- name: (08) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+- name: (12) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: us16-4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
+  tls: true
+  servername: server1.9966338.xyz
   ws-opts:
-    path: /usserver
+    path: /efrsdioy98wert
     headers:
-      Host: uspanel.unixzone.us
-- name: '(09) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
+      Host: server1.9966338.xyz
+- name: (13) - 🇹🇷 (VLESS)
   type: vless
-  server: 169.40.42.15
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: (10) - 🇺🇸 机场推荐:dafei.de 美国 31 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 136.67.16.72
-  port: 443
-  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
-    short-id: bd4aa541e5306ba2
-- name: (11) - 美国_1011111200 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 142.91.108.25
-  port: 443
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  udp: true
-  network: tcp
-  tls: true
-  servername: jp3.nztvpn.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
-    short-id: ea36c03d86f91287
-- name: (12) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (13) - 🇩🇪 (VLESS)
-  type: vless
-  server: 193.233.74.6
+  server: 62.60.233.157
   port: 8444
   uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   udp: true
   network: grpc
   tls: true
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
   grpc-opts:
     grpc-service-name: GunService
 - name: (14) - 🇫🇷 (VLESS)
@@ -195,18 +192,21 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (15) - 未知_1011111487 t.me/rjsxrd (VLESS)
+- name: (15) - 🇩🇪 (VLESS)
   type: vless
-  server: ziro.skin
-  port: 443
-  uuid: f028a8c0-6763-4558-aee3-2563db9d7825
+  server: 193.233.74.6
+  port: 8444
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   udp: true
-  network: ws
+  network: grpc
   tls: true
-  servername: ziro.skin
-  client-fingerprint: qq
-  ws-opts:
-    path: /xxvclws
+  servername: github.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  grpc-opts:
+    grpc-service-name: GunService
 - name: (16) - 美国_1011111352 t.me/rjsxrd (VLESS)
   type: vless
   server: 72.56.85.221
@@ -221,33 +221,99 @@ proxies:
   reality-opts:
     public-key: uTOxHZkQuw_YnO3GEIV0jDkVNOsOPQrTIPdRb2Rk8DQ
     short-id: 00353c
-- name: (17) - 🇹🇷 (VLESS)
+- name: (17) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
-  server: 62.60.233.157
-  port: 8444
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  udp: true
-  network: grpc
-  tls: true
-  servername: github.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  grpc-opts:
-    grpc-service-name: GunService
-- name: (18) - 🇵🇱 波兰 | POL t.me/rjsxrd (VLESS)
-  type: vless
-  server: pl-1-1.unturned-rust-dead.lol
-  port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  server: 51.158.206.98
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   network: tcp
   tls: true
-  servername: pl-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-- name: (19) - 🇯🇵 (VLESS)
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: (18) - 美国_1011111200 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 142.91.108.25
+  port: 443
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  udp: true
+  network: tcp
+  tls: true
+  servername: jp3.nztvpn.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
+    short-id: ea36c03d86f91287
+- name: (19) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (20) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21018
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (21) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (22) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (23) - 美国_101111846 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 137.175.82.40
+  port: 30556
+  uuid: 949d278e-6d98-4014-84e9-59f1c6c93e0e
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.lovelive-anime.jp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E
+    short-id: d082f567
+- name: (24) - 香港_101111123 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 154.37.216.186
+  port: 443
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+- name: (25) - 🇯🇵 (VLESS)
   type: vless
   server: 3.114.220.22
   port: 10583
@@ -261,10 +327,24 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
-- name: (20) - 日本_101111070 t.me/rjsxrd (VLESS)
+- name: (26) - 🇫🇮 (VLESS)
+  type: vless
+  server: 153.80.241.206
+  port: 8444
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  udp: true
+  network: grpc
+  tls: true
+  servername: github.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  grpc-opts:
+    grpc-service-name: GunService
+- name: (27) - 日本_101111062 t.me/rjsxrd (VLESS)
   type: vless
   server: 3.114.220.22
-  port: 19645
+  port: 18007
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
   udp: true
   network: tcp
@@ -275,35 +355,7 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
-- name: (21) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-- name: (22) - 5 (VLESS)
-  type: vless
-  server: 87.228.92.114
-  port: 25481
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: (23) -  t.me/rjsxrd (VMESS)
+- name: (28) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -318,49 +370,90 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: (24) - 美国_101111846 t.me/rjsxrd (VLESS)
+- name: (29) - 🇸🇬_新加坡_26 t.me/rjsxrd (VLESS)
   type: vless
-  server: 137.175.82.40
-  port: 30556
-  uuid: 949d278e-6d98-4014-84e9-59f1c6c93e0e
+  server: 34.87.113.18
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
   udp: true
   network: tcp
   tls: true
-  servername: www.lovelive-anime.jp
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E
-    short-id: d082f567
-- name: (25) - 美国_1011111201 t.me/rjsxrd (VLESS)
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+- name: (30) - 5 (VLESS)
   type: vless
-  server: 154.29.149.140
-  port: 41705
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 87.228.92.114
+  port: 25481
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: us1p1.xn--ghq880n3na965a.com
+  servername: www.bing.com
   client-fingerprint: firefox
+  reality-opts:
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  grpc-opts:
+    grpc-service-name: 8cb5baa18cd7
+- name: (31) - 芬兰_101111042 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 5.42.99.64
+  port: 8443
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  udp: true
+  network: tcp
+  tls: true
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
-    short-id: e51285e3
-- name: (26) - 未知_101111695 t.me/rjsxrd (VLESS)
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+- name: (32) - 南非_101111001 t.me/rjsxrd (VLESS)
   type: vless
-  server: hikvision-plus.com
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  server: 34.35.186.228
+  port: 443
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: uwu.blueknightnet.qzz.io
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: (27) - CF中转_1011112173 t.me/rjsxrd (VLESS)
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+    short-id: 89b3a20484eb43ec
+- name: (33) - 日本_101111070 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 3.114.220.22
+  port: 19645
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+- name: (34) - 芬兰_101111044 t.me/rjsxrd (VLESS)
+  type: vless
+  server: du-rov.secureservice.top
+  port: 8443
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  udp: true
+  network: tcp
+  tls: true
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+- name: (35) - CF中转_1011112173 t.me/rjsxrd (VLESS)
   type: vless
   server: 104.21.84.30
   port: 2053
@@ -374,34 +467,44 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
-- name: (28) - 英国_101111011 t.me/rjsxrd (VLESS)
+- name: (36) - 🇩🇪 (VLESS)
   type: vless
-  server: specific3.kandnet.com
+  server: www.large-files.info
+  port: 8443
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  udp: true
+  network: ws
+  tls: true
+  servername: www.large-files.info
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+- name: (37) - 🇵🇱 波兰 | POL t.me/rjsxrd (VLESS)
+  type: vless
+  server: pl-1-1.unturned-rust-dead.lol
   port: 443
-  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   udp: true
   network: tcp
   tls: true
-  servername: specific3.kandnet.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw
-- name: (29) - 🇵🇱 波兰 | POL t.me/rjsxrd (VLESS)
-  type: vless
-  server: 77.110.105.122
-  port: 443
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
-  udp: true
-  network: tcp
-  tls: true
-  servername: co-pl.speedtec.ru
+  servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+- name: (38) - Server 3 (VLESS)
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
-    short-id: 226509f017e4c36d
-- name: (30) -  t.me/rjsxrd (VMESS)
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: (39) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: mix2.998998.best
   port: 443
@@ -416,115 +519,56 @@ proxies:
     path: /rthiugoyretdsuigg?ed=2560
     headers:
       Host: server10.9966338.xyz
-- name: (31) - 🇫🇮 (VLESS)
+- name: '(40) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
   type: vless
-  server: 153.80.241.206
-  port: 8444
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: github.com
+  servername: yahoo.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  grpc-opts:
-    grpc-service-name: GunService
-- name: (32) - 英国_101111299 t.me/rjsxrd (VLESS)
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
+- name: (41) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
   type: vless
-  server: 51.38.71.147
+  server: 196.240.125.5
   port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  udp: true
-  network: tcp
-  tls: true
-  servername: node-uk.connectsuite.org
-  client-fingerprint: firefox
-- name: (33) - 🇫🇮 机场推荐:dafei.de 芬兰 04 t.me/rjsxrd (VLESS)
-  type: vless
-  server: feow.nomush.ir
-  port: 11497
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  udp: true
-  network: tcp
-  tls: true
-  servername: dynu.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk
-    short-id: b0063cec752e829a
-- name: (34) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (35) - 芬兰_101111042 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 5.42.99.64
-  port: 8443
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  udp: true
-  network: tcp
-  tls: true
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-- name: (36) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (37) - 🇷🇺Обходы (VLESS)
-  type: vless
-  server: 141.105.66.238
-  port: 8448
-  uuid: b8df3f50-ffef-4c7e-9ef3-d5b156a47c02
+  uuid: 1bda2ae7-b597-4704-95a8-29c0f76324ba
   udp: true
   network: raw
   tls: true
-  servername: www.wildberries.ru
-  client-fingerprint: random
+  servername: api-v1-6aca6fae.vmagnum.win
+  client-fingerprint: ios
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vYhHkB1azbwnhCuaQ54zYdv9_RJSmodhEWMQLVCZ1x8
-    short-id: 0c68bd3721126c10
-- name: (38) - 日本_101111062 t.me/rjsxrd (VLESS)
+- name: (42) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
   type: vless
-  server: 3.114.220.22
-  port: 18007
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  server: nl.alpheratzz.org
+  port: 8443
+  uuid: 1bda2ae7-b597-4704-95a8-29c0f76324ba
   udp: true
   network: tcp
   tls: true
-  servername: www.apple.com
+  servername: api-v1-6aca6fae.vmagnum.win
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-- name: (39) - 🇳🇱Обходы (VLESS)
+- name: (43) - 未知_101111695 t.me/rjsxrd (VLESS)
   type: vless
-  server: 46.8.208.17
-  port: 7443
-  uuid: 7b859f9e-0e6a-475f-b5e3-5d671b043164
+  server: hikvision-plus.com
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   udp: true
-  network: raw
+  network: ws
   tls: true
-  servername: hellox-3.locallynet.org
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: (40) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
+  servername: uwu.blueknightnet.qzz.io
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: (44) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
   type: vless
   server: 169.40.42.179
   port: 443
@@ -538,181 +582,115 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: (41) - 🇩🇪 (VLESS)
+- name: (45) - 美国_1011111201 t.me/rjsxrd (VLESS)
   type: vless
-  server: www.large-files.info
-  port: 8443
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  server: 154.29.149.140
+  port: 41705
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  network: tcp
+  tls: true
+  servername: us1p1.xn--ghq880n3na965a.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
+    short-id: e51285e3
+- name: (46) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
-  tls: true
-  servername: www.large-files.info
   ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
-- name: (42) - 🇩🇪 (VLESS)
+    path: /
+- name: (47) - 🇵🇱 (VLESS)
   type: vless
-  server: geow3.nomush.ir
-  port: 666
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: C9AIgcAGpHr97gE1bRAGZzq1ZhsQByTcoArjJMjuBis
-    short-id: 436bd46854a888b8
-- name: (43) - 🇬🇧 (VLESS)
-  type: vless
-  server: node-uk.connectsuite.org
+  server: pl.flen-vpn.xyz
   port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   network: tcp
   tls: true
-  client-fingerprint: chrome
-- name: (44) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
+  servername: pl.flen-vpn.xyz
+- name: (48) - 英国_101111011 t.me/rjsxrd (VLESS)
   type: vless
-  server: nl.alpheratzz.org
-  port: 8443
-  uuid: 1bda2ae7-b597-4704-95a8-29c0f76324ba
-  udp: true
-  network: tcp
-  tls: true
-  servername: api-v1-6aca6fae.vmagnum.win
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: (45) - 香港_101111123 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 154.37.216.186
+  server: specific3.kandnet.com
   port: 443
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
   udp: true
   network: tcp
   tls: true
-  servername: www.bing.com
+  servername: specific3.kandnet.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-- name: (46) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
+    public-key: 0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw
+- name: (49) - 英国_101111312 t.me/rjsxrd (VLESS)
   type: vless
-  server: 196.240.125.5
+  server: 2.26.225.89
   port: 8443
-  uuid: 1bda2ae7-b597-4704-95a8-29c0f76324ba
-  udp: true
-  network: raw
-  tls: true
-  servername: api-v1-6aca6fae.vmagnum.win
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: (47) - 🇺🇸 机场推荐:dafei.de 美国 34 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 136.107.170.196
-  port: 443
-  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   network: tcp
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
-    short-id: 4c69c4b51c580d60
-- name: (48) - 🇸🇬_新加坡_26 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 34.87.113.18
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-    short-id: eb97ce837da2f6ad
-- name: '(49) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-    short-id: 0e
-- name: (50) - 南非_101111001 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 34.35.186.228
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) -  t.me/rjsxrd (VMESS)
-  - (02) - 🇫🇮_芬兰_16 t.me/rjsxrd (VLESS)
-  - (03) -  t.me/rjsxrd (VMESS)
-  - (04) -  t.me/rjsxrd (VMESS)
-  - (05) -  t.me/rjsxrd (VMESS)
+  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (02) -  t.me/rjsxrd (VMESS)
+  - (03) - 🇺🇸 机场推荐:dafei.de 美国 34 t.me/rjsxrd (VLESS)
+  - (04) - 🇫🇮_芬兰_16 t.me/rjsxrd (VLESS)
+  - (05) - 🇺🇸 机场推荐:dafei.de 美国 31 t.me/rjsxrd (VLESS)
   - (06) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  - (07) - 伊拉克_101111005 t.me/rjsxrd (VLESS)
-  - (08) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - '(09) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
-  - (10) - 🇺🇸 机场推荐:dafei.de 美国 31 t.me/rjsxrd (VLESS)
-  - (11) - 美国_1011111200 t.me/rjsxrd (VLESS)
-  - (12) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (13) - 🇩🇪 (VLESS)
+  - '(07) - اگه میخوای قطع نشی جوین شو : @farsiproxy (VLESS)'
+  - (08) -  t.me/rjsxrd (VMESS)
+  - (09) -  t.me/rjsxrd (VMESS)
+  - (10) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
+  - (11) - 伊拉克_101111005 t.me/rjsxrd (VLESS)
+  - (12) -  t.me/rjsxrd (VMESS)
+  - (13) - 🇹🇷 (VLESS)
   - (14) - 🇫🇷 (VLESS)
-  - (15) - 未知_1011111487 t.me/rjsxrd (VLESS)
+  - (15) - 🇩🇪 (VLESS)
   - (16) - 美国_1011111352 t.me/rjsxrd (VLESS)
-  - (17) - 🇹🇷 (VLESS)
-  - (18) - 🇵🇱 波兰 | POL t.me/rjsxrd (VLESS)
-  - (19) - 🇯🇵 (VLESS)
-  - (20) - 日本_101111070 t.me/rjsxrd (VLESS)
-  - (21) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  - (22) - 5 (VLESS)
-  - (23) -  t.me/rjsxrd (VMESS)
-  - (24) - 美国_101111846 t.me/rjsxrd (VLESS)
-  - (25) - 美国_1011111201 t.me/rjsxrd (VLESS)
-  - (26) - 未知_101111695 t.me/rjsxrd (VLESS)
-  - (27) - CF中转_1011112173 t.me/rjsxrd (VLESS)
-  - (28) - 英国_101111011 t.me/rjsxrd (VLESS)
-  - (29) - 🇵🇱 波兰 | POL t.me/rjsxrd (VLESS)
-  - (30) -  t.me/rjsxrd (VMESS)
-  - (31) - 🇫🇮 (VLESS)
-  - (32) - 英国_101111299 t.me/rjsxrd (VLESS)
-  - (33) - 🇫🇮 机场推荐:dafei.de 芬兰 04 t.me/rjsxrd (VLESS)
-  - (34) -  t.me/rjsxrd (VMESS)
-  - (35) - 芬兰_101111042 t.me/rjsxrd (VLESS)
-  - (36) -  t.me/rjsxrd (VMESS)
-  - (37) - 🇷🇺Обходы (VLESS)
-  - (38) - 日本_101111062 t.me/rjsxrd (VLESS)
-  - (39) - 🇳🇱Обходы (VLESS)
-  - (40) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
-  - (41) - 🇩🇪 (VLESS)
-  - (42) - 🇩🇪 (VLESS)
-  - (43) - 🇬🇧 (VLESS)
-  - (44) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
-  - (45) - 香港_101111123 t.me/rjsxrd (VLESS)
-  - (46) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
-  - (47) - 🇺🇸 机场推荐:dafei.de 美国 34 t.me/rjsxrd (VLESS)
-  - (48) - 🇸🇬_新加坡_26 t.me/rjsxrd (VLESS)
-  - '(49) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
-  - (50) - 南非_101111001 t.me/rjsxrd (VLESS)
+  - (17) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (18) - 美国_1011111200 t.me/rjsxrd (VLESS)
+  - (19) -  t.me/rjsxrd (VMESS)
+  - (20) -  t.me/rjsxrd (VMESS)
+  - (21) -  t.me/rjsxrd (VMESS)
+  - (22) -  t.me/rjsxrd (VMESS)
+  - (23) - 美国_101111846 t.me/rjsxrd (VLESS)
+  - (24) - 香港_101111123 t.me/rjsxrd (VLESS)
+  - (25) - 🇯🇵 (VLESS)
+  - (26) - 🇫🇮 (VLESS)
+  - (27) - 日本_101111062 t.me/rjsxrd (VLESS)
+  - (28) -  t.me/rjsxrd (VMESS)
+  - (29) - 🇸🇬_新加坡_26 t.me/rjsxrd (VLESS)
+  - (30) - 5 (VLESS)
+  - (31) - 芬兰_101111042 t.me/rjsxrd (VLESS)
+  - (32) - 南非_101111001 t.me/rjsxrd (VLESS)
+  - (33) - 日本_101111070 t.me/rjsxrd (VLESS)
+  - (34) - 芬兰_101111044 t.me/rjsxrd (VLESS)
+  - (35) - CF中转_1011112173 t.me/rjsxrd (VLESS)
+  - (36) - 🇩🇪 (VLESS)
+  - (37) - 🇵🇱 波兰 | POL t.me/rjsxrd (VLESS)
+  - (38) - Server 3 (VLESS)
+  - (39) -  t.me/rjsxrd (VMESS)
+  - '(40) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
+  - (41) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
+  - (42) - 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd (VLESS)
+  - (43) - 未知_101111695 t.me/rjsxrd (VLESS)
+  - (44) - 🇬🇧telegram➠@v2rayNG_Matsuri (VLESS)
+  - (45) - 美国_1011111201 t.me/rjsxrd (VLESS)
+  - (46) -  t.me/rjsxrd (VMESS)
+  - (47) - 🇵🇱 (VLESS)
+  - (48) - 英国_101111011 t.me/rjsxrd (VLESS)
+  - (49) - 英国_101111312 t.me/rjsxrd (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
