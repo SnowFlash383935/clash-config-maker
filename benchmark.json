@@ -504,16 +504,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(04) - CF中转_1019063279 t.me/rjsxrd (VLESS)",
+    "name": "CF中转_1019063279 t.me/rjsxrd",
     "scheme": "vless",
     "server": "188.114.97.6",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
-    "udp_ok": true,
-    "latency_ms": 536.723008999985,
-    "throughput_mbps": 6.842748549048554,
-    "score": 0.05079640539608897,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "🇫🇷_法国_62 t.me/rjsxrd",
@@ -810,7 +810,7 @@
     "port": 2096,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 813.3983730000409,
+    "latency_ms": 2003.3073810000133,
     "throughput_mbps": null,
     "score": null,
     "error": "ReadTimeout: SOCKSHTTPSConnectionPool(host='speed.cloudflare.com', port=443): Read timed out. (read timeout=12)"
@@ -996,15 +996,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(05) - 🇫🇷 法国 | FRA t.me/rjsxrd (VLESS)",
+    "name": "(04) - 🇫🇷 法国 | FRA t.me/rjsxrd (VLESS)",
     "scheme": "vless",
     "server": "redcloudport-bidarbash.sbs",
     "port": 443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/1.txt",
     "udp_ok": true,
-    "latency_ms": 629.4708190000051,
-    "throughput_mbps": 6.999961007592237,
-    "score": 0.0018753458214573761,
+    "latency_ms": 1020.3581590000113,
+    "throughput_mbps": 4.075264389183023,
+    "score": 0.0,
     "error": null
   },
   {
@@ -1152,16 +1152,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "🇫🇷 France | [SNI-RU] www.rutube.ru",
+    "name": "(02) - 🇫🇷 France | [SNI-RU] www.rutube.ru (VLESS)",
     "scheme": "vless",
     "server": "95.163.152.205",
     "port": 8443,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/4.txt",
-    "udp_ok": false,
-    "latency_ms": null,
-    "throughput_mbps": null,
-    "score": null,
-    "error": "TimeoutError: timed out"
+    "udp_ok": true,
+    "latency_ms": 380.60784900000044,
+    "throughput_mbps": 6.021857338365211,
+    "score": 0.4948323463527396,
+    "error": null
   },
   {
     "name": "🇩🇪telegram➠@v2rayNG_Matsuri",
@@ -2430,9 +2430,9 @@
     "port": 23576,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
     "udp_ok": true,
-    "latency_ms": 412.074189000009,
-    "throughput_mbps": 7.838843236483551,
-    "score": 0.13094660388423546,
+    "latency_ms": 580.5159850000337,
+    "throughput_mbps": 5.250885263155421,
+    "score": 0.3215569043134567,
     "error": null
   },
   {
@@ -2484,15 +2484,15 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(02) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)",
+    "name": "(01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)",
     "scheme": "vless",
     "server": "69.48.201.136",
     "port": 30016,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
     "udp_ok": true,
-    "latency_ms": 154.9869639999315,
-    "throughput_mbps": 22.465026853378475,
-    "score": 0.4462207992055347,
+    "latency_ms": 313.94850599997426,
+    "throughput_mbps": 10.181773276495662,
+    "score": 1.0,
     "error": null
   },
   {
@@ -2508,16 +2508,16 @@
     "error": "TimeoutError: timed out"
   },
   {
-    "name": "(01) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)",
+    "name": "surfboardv2ray  VL-TCP-  XX 8ms",
     "scheme": "vless",
     "server": "137.184.218.169",
     "port": 36925,
     "source": "https://raw.githubusercontent.com/hiztin/VLESS-PO-GRIBI/main/deploy/subscriptions/2.txt",
-    "udp_ok": true,
-    "latency_ms": 81.7087719999563,
-    "throughput_mbps": 65.52457657320298,
-    "score": 1.0,
-    "error": null
+    "udp_ok": false,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "score": null,
+    "error": "TimeoutError: timed out"
   },
   {
     "name": "surfboardv2ray  VL-TCP-  XX 80ms",
