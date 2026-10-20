@@ -27,35 +27,7 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-- name: (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (04) - 俄罗斯联邦_102017206 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 5.252.179.15
-  port: 443
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.bing.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-- name: (05) - 🇩🇪_德国_8 t.me/rjsxrd (VLESS)
+- name: (03) - 🇩🇪_德国_16 t.me/rjsxrd (VLESS)
   type: vless
   server: ge-s-1.pythonmakemigreat.wiki
   port: 443
@@ -69,23 +41,51 @@ proxies:
   reality-opts:
     public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
     short-id: 2c9a2790ad5900b2
-- name: (06) - 🇫🇷 法国 | FRA t.me/rjsxrd (VLESS)
+- name: (04) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
-  server: speedtest.org
-  port: 8443
-  uuid: c3571d81-38bd-44a8-9b75-5af8a125fc42
+  server: 51.158.206.98
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  network: tcp
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: (05) - CF中转_1020226163 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 104.21.6.186
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   network: ws
   tls: true
-  servername: pbsjv.megalionzone-vexina.sbs
-  client-fingerprint: chrome
+  servername: a.cwvps.eu.org
+  client-fingerprint: unsafe
   ws-opts:
-    path: /bala
+    path: /ws
     headers:
-      Host: pbsjv.megalionzone-vexina.sbs
-- name: (07) - CF中转_1020176910 t.me/rjsxrd (VLESS)
+      Host: a.cwvps.eu.org
+- name: (06) - CF中转_1020223584 t.me/rjsxrd (VLESS)
   type: vless
-  server: 104.16.111.193
+  server: 104.18.0.181
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  network: ws
+  tls: true
+  servername: a.cwvps.eu.org
+  client-fingerprint: unsafe
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: (07) - CF中转_1020228027 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 104.16.10.116
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -97,21 +97,35 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: (08) - CF中转_1020175645 t.me/rjsxrd (VLESS)
+- name: (08) - 🇯🇵_日本_19 t.me/rjsxrd (VLESS)
   type: vless
-  server: 104.21.236.63
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: funagfrdfs.alixxplay.com
+  port: 56656
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: u.srilankangrill.online
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: (09) - CF中转_102017616 t.me/rjsxrd (VLESS)
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
+    short-id: aae6d935
+- name: (09) - 🇯🇵_日本_20 t.me/rjsxrd (VLESS)
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 46105
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.lamer.com.sg
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
+- name: (10) - CF中转_1020225806 t.me/rjsxrd (VLESS)
   type: vless
   server: 188.114.97.6
   port: 443
@@ -125,34 +139,66 @@ proxies:
     path: /resiouhgggggggggg?ed=2560fp=chrome
     headers:
       Host: server13.9966338.xyz
-- name: (10) - 保加利亚_102017027 t.me/rjsxrd (VLESS)
+- name: (11) - 🇧🇾_白俄罗斯_12 t.me/rjsxrd (VLESS)
   type: vless
-  server: 94.156.79.93
-  port: 443
-  uuid: 1a5e7720-abf3-4b9b-bc9b-9a900a04b434
+  server: 178.172.227.124
+  port: 10444
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   network: tcp
   tls: true
-  servername: www.microsoft.com
-  client-fingerprint: firefox
+  servername: ads.x5.ru
+  client-fingerprint: safari
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
-    short-id: f129dcdbf64f
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+- name: (12) - 俄罗斯联邦_102022003 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 185.141.227.223
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: firefox
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: (13) - Шкатулка (VMESS)
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: TOP
   type: select
   proxies:
   - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   - (02) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  - (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (04) - 俄罗斯联邦_102017206 t.me/rjsxrd (VLESS)
-  - (05) - 🇩🇪_德国_8 t.me/rjsxrd (VLESS)
-  - (06) - 🇫🇷 法国 | FRA t.me/rjsxrd (VLESS)
-  - (07) - CF中转_1020176910 t.me/rjsxrd (VLESS)
-  - (08) - CF中转_1020175645 t.me/rjsxrd (VLESS)
-  - (09) - CF中转_102017616 t.me/rjsxrd (VLESS)
-  - (10) - 保加利亚_102017027 t.me/rjsxrd (VLESS)
+  - (03) - 🇩🇪_德国_16 t.me/rjsxrd (VLESS)
+  - (04) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (05) - CF中转_1020226163 t.me/rjsxrd (VLESS)
+  - (06) - CF中转_1020223584 t.me/rjsxrd (VLESS)
+  - (07) - CF中转_1020228027 t.me/rjsxrd (VLESS)
+  - (08) - 🇯🇵_日本_19 t.me/rjsxrd (VLESS)
+  - (09) - 🇯🇵_日本_20 t.me/rjsxrd (VLESS)
+  - (10) - CF中转_1020225806 t.me/rjsxrd (VLESS)
+  - (11) - 🇧🇾_白俄罗斯_12 t.me/rjsxrd (VLESS)
+  - (12) - 俄罗斯联邦_102022003 t.me/rjsxrd (VLESS)
+  - (13) - Шкатулка (VMESS)
   - DIRECT
 rules:
 - MATCH,TOP
