@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (03) - 🇩🇪_德国_8 t.me/rjsxrd (VLESS)
+- name: (03) - 🇩🇪_德国_16 t.me/rjsxrd (VLESS)
   type: vless
   server: ge-s-1.pythonmakemigreat.wiki
   port: 443
@@ -42,7 +42,21 @@ proxies:
   reality-opts:
     public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
     short-id: 2c9a2790ad5900b2
-- name: (04) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
+- name: (04) - 🇳🇱_荷兰_11 t.me/rjsxrd (VLESS)
+  type: vless
+  server: 31.59.217.164
+  port: 443
+  uuid: 4b09d40d-e36a-47c3-baa4-e6bf551b3183
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.adobe.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kOkILS7UXUQDNPLYn4SQ65kMIWKXNOttV5Kddw4ZqTo
+    short-id: 1625a2a79d01328f
+- name: (05) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
   type: vless
   server: 9.247.34.118
   port: 2053
@@ -56,89 +70,29 @@ proxies:
   reality-opts:
     public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
     short-id: c46d735d6444850f
-- name: (05) - CF中转_1021025320 t.me/rjsxrd (VLESS)
+- name: '(06) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  udp: true
-  network: ws
-  tls: true
-  servername: server13.9966338.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /resiouhgggggggggg?ed=2560fp=chrome
-    headers:
-      Host: server13.9966338.xyz
-- name: (06) - ❓Other_45|254KB/s|F003-260618 [3d18f0c6de7c] t.me/rjsxrd (VLESS)
-  type: vless
-  server: sg.fasti.win
-  port: 443
-  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
   udp: true
   network: tcp
   tls: true
-  servername: sg.fasti.win
+  servername: yahoo.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
-    short-id: feedbacc
-- name: (07) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: jmp1.907737.xyz
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: (08) - 🌐 Anycast-IP | 🇩🇪 🇷🇺 [*CIDR] t.me/rjsxrd (VLESS)
-  type: vless
-  server: 103.24.207.40
-  port: 8443
-  uuid: 258d8fc5-206c-48fd-88df-169dbbe44d3f
-  udp: true
-  network: tcp
-  tls: true
-  servername: edge-fr.extazy.net
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
-- name: '(09) - 🇩🇪 Germany — #103 [Verified RU] t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
 proxy-groups:
 - name: TOP
   type: select
   proxies:
   - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (03) - 🇩🇪_德国_8 t.me/rjsxrd (VLESS)
-  - (04) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
-  - (05) - CF中转_1021025320 t.me/rjsxrd (VLESS)
-  - (06) - ❓Other_45|254KB/s|F003-260618 [3d18f0c6de7c] t.me/rjsxrd (VLESS)
-  - (07) -  t.me/rjsxrd (VMESS)
-  - (08) - 🌐 Anycast-IP | 🇩🇪 🇷🇺 [*CIDR] t.me/rjsxrd (VLESS)
-  - '(09) - 🇩🇪 Germany — #103 [Verified RU] t.me/rjsxrd (VLESS)'
+  - (03) - 🇩🇪_德国_16 t.me/rjsxrd (VLESS)
+  - (04) - 🇳🇱_荷兰_11 t.me/rjsxrd (VLESS)
+  - (05) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
+  - '(06) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
   - DIRECT
 rules:
 - MATCH,TOP
