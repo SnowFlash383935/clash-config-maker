@@ -14,34 +14,7 @@ proxies:
     path: /usserver
     headers:
       Host: uspanel.unixzone.us
-- name: (02) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-- name: (03) - 🇩🇪_德国_16 t.me/rjsxrd (VLESS)
-  type: vless
-  server: ge-s-1.pythonmakemigreat.wiki
-  port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  udp: true
-  network: tcp
-  tls: true
-  servername: ge-s-1.pythonmakemigreat.wiki
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-- name: (04) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -55,77 +28,35 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (05) - CF中转_1020226163 t.me/rjsxrd (VLESS)
+- name: (03) - 🇩🇪_德国_8 t.me/rjsxrd (VLESS)
   type: vless
-  server: 104.21.6.186
+  server: ge-s-1.pythonmakemigreat.wiki
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: a.cwvps.eu.org
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: (06) - CF中转_1020223584 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 104.18.0.181
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  network: ws
-  tls: true
-  servername: a.cwvps.eu.org
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: (07) - CF中转_1020228027 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 104.16.10.116
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  tls: true
-  servername: u.srilankangrill.online
+  servername: ge-s-1.pythonmakemigreat.wiki
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: (08) - 🇯🇵_日本_19 t.me/rjsxrd (VLESS)
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+- name: (04) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 56656
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 9.247.34.118
+  port: 2053
+  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
   udp: true
   network: tcp
   tls: true
-  servername: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: ios
+  servername: www.rutube.ru
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
-    short-id: aae6d935
-- name: (09) - 🇯🇵_日本_20 t.me/rjsxrd (VLESS)
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.lamer.com.sg
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-- name: (10) - CF中转_1020225806 t.me/rjsxrd (VLESS)
+    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
+    short-id: c46d735d6444850f
+- name: (05) - CF中转_1021025320 t.me/rjsxrd (VLESS)
   type: vless
   server: 188.114.97.6
   port: 443
@@ -139,21 +70,49 @@ proxies:
     path: /resiouhgggggggggg?ed=2560fp=chrome
     headers:
       Host: server13.9966338.xyz
-- name: (11) - 🇧🇾_白俄罗斯_12 t.me/rjsxrd (VLESS)
+- name: (06) - ❓Other_45|254KB/s|F003-260618 [3d18f0c6de7c] t.me/rjsxrd (VLESS)
   type: vless
-  server: 178.172.227.124
-  port: 10444
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  server: sg.fasti.win
+  port: 443
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
   udp: true
   network: tcp
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: safari
+  servername: sg.fasti.win
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-- name: (12) - 俄罗斯联邦_102022003 t.me/rjsxrd (VLESS)
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+- name: (07) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: jmp1.907737.xyz
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: (08) - 🌐 Anycast-IP | 🇩🇪 🇷🇺 [*CIDR] t.me/rjsxrd (VLESS)
+  type: vless
+  server: 103.24.207.40
+  port: 8443
+  uuid: 258d8fc5-206c-48fd-88df-169dbbe44d3f
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-fr.extazy.net
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+- name: '(09) - 🇩🇪 Germany — #103 [Verified RU] t.me/rjsxrd (VLESS)'
   type: vless
   server: 185.141.227.223
   port: 443
@@ -162,43 +121,24 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
+  client-fingerprint: safari
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: (13) - Шкатулка (VMESS)
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: TOP
   type: select
   proxies:
   - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (02) - surfboardv2ray  VL-TCP-  XX 8ms (VLESS)
-  - (03) - 🇩🇪_德国_16 t.me/rjsxrd (VLESS)
-  - (04) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (05) - CF中转_1020226163 t.me/rjsxrd (VLESS)
-  - (06) - CF中转_1020223584 t.me/rjsxrd (VLESS)
-  - (07) - CF中转_1020228027 t.me/rjsxrd (VLESS)
-  - (08) - 🇯🇵_日本_19 t.me/rjsxrd (VLESS)
-  - (09) - 🇯🇵_日本_20 t.me/rjsxrd (VLESS)
-  - (10) - CF中转_1020225806 t.me/rjsxrd (VLESS)
-  - (11) - 🇧🇾_白俄罗斯_12 t.me/rjsxrd (VLESS)
-  - (12) - 俄罗斯联邦_102022003 t.me/rjsxrd (VLESS)
-  - (13) - Шкатулка (VMESS)
+  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (03) - 🇩🇪_德国_8 t.me/rjsxrd (VLESS)
+  - (04) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
+  - (05) - CF中转_1021025320 t.me/rjsxrd (VLESS)
+  - (06) - ❓Other_45|254KB/s|F003-260618 [3d18f0c6de7c] t.me/rjsxrd (VLESS)
+  - (07) -  t.me/rjsxrd (VMESS)
+  - (08) - 🌐 Anycast-IP | 🇩🇪 🇷🇺 [*CIDR] t.me/rjsxrd (VLESS)
+  - '(09) - 🇩🇪 Germany — #103 [Verified RU] t.me/rjsxrd (VLESS)'
   - DIRECT
 rules:
 - MATCH,TOP
