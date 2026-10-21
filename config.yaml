@@ -5,7 +5,7 @@ log-level: info
 proxies:
 - name: (01) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 84.17.41.2
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -32,21 +32,20 @@ proxies:
     path: /usserver
     headers:
       Host: uspanel.unixzone.us
-- name: (04) - 俄罗斯联邦_102117190 t.me/rjsxrd (VLESS)
+- name: (04) - 🇺🇸_美国_32 t.me/rjsxrd (VLESS)
   type: vless
-  server: 193.233.253.180
-  port: 8444
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: github.com
+  servername: fuck.rkn
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  grpc-opts:
-    grpc-service-name: GunService
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
 - name: (05) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: 31.76.11.83
@@ -56,21 +55,18 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: (06) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  type: vless
-  server: shortbig.ir
-  port: 2087
-  uuid: 31f185b6-e591-413b-ba72-88083a87feb2
+- name: (06) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 168.113.215.6
+  port: 33736
+  uuid: 1281acca-f21d-475c-bf04-eccbee7f8df2
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
-  tls: true
-  servername: wefuhsah.ferto-shoping12.website
-  client-fingerprint: unsafe
   ws-opts:
-    path: /hokm
-    headers:
-      Host: wefuhsah.ferto-shoping12.website
-- name: (07) - 巴西_102117092 t.me/rjsxrd (VLESS)
+    path: /vmess-ws
+- name: (07) - 巴西_102122090 t.me/rjsxrd (VLESS)
   type: vless
   server: 177.3.222.100
   port: 443
@@ -98,111 +94,35 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (09) - 捷克_102117032 t.me/rjsxrd (VLESS)
+- name: (09) - CF中转_1021223165 t.me/rjsxrd (VLESS)
   type: vless
-  server: 195.123.245.241
+  server: 188.114.97.6
   port: 443
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
-  udp: true
-  network: tcp
-  tls: true
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-- name: (10) - 德国_102117039 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   udp: true
   network: ws
   tls: true
-  servername: sino.bestsellers1.site
+  servername: server13.9966338.xyz
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /resiouhgggggggggg?ed=2560fp=chrome
     headers:
-      Host: sino.bestsellers1.site
-- name: (11) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
+      Host: server13.9966338.xyz
+- name: (10) - 🇷🇺_俄罗斯_122 t.me/rjsxrd (VLESS)
   type: vless
-  server: 9.247.34.118
-  port: 2053
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
+  server: 144.48.11.97
+  port: 43000
+  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
   udp: true
   network: tcp
   tls: true
-  servername: www.rutube.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-- name: (12) - 🇷🇺_俄罗斯_112 t.me/rjsxrd (VLESS)
-  type: vless
-  server: m-vruvc.mvpstr.com
-  port: 443
-  uuid: 7c86240f-ac0c-4cfe-87c8-fa0dd69b2d25
-  udp: true
-  network: tcp
-  tls: true
-  servername: m-vruvc.mvpstr.com
+  servername: 144.48.11.97
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: ZtAlhN1pU4MTmv4KaX9J_5_8KWnwy9IOnc-BLzIf234
-    short-id: 11ac376e18d20343
-- name: (13) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 168.113.215.6
-  port: 33736
-  uuid: 1281acca-f21d-475c-bf04-eccbee7f8df2
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-- name: (14) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 146.56.112.110
-  port: 8888
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (15) - 🇭🇰 香港 | HKG t.me/rjsxrd (VLESS)
-  type: vless
-  server: 151.242.85.236
-  port: 443
-  uuid: 7aec627e-a258-4ded-9fd9-fbd7c024f950
-  udp: true
-  network: tcp
-  tls: true
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
-    short-id: 9b6fa4047c24629f
-- name: (16) - 🇨🇿_捷克_55 t.me/rjsxrd (VLESS)
-  type: vless
-  server: server.slavkiti.monster
-  port: 443
-  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.mozilla.org
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 2a2ce9e42980
-- name: (17) - 保加利亚_102117028 t.me/rjsxrd (VLESS)
+    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
+    short-id: 725e6ea0
+- name: (11) - 保加利亚_102122028 t.me/rjsxrd (VLESS)
   type: vless
   server: 94.156.79.93
   port: 443
@@ -216,61 +136,6 @@ proxies:
   reality-opts:
     public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
     short-id: f129dcdbf64f
-- name: '(18) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-    short-id: 0e
-- name: (19) - 🇺🇸_美国_120 t.me/rjsxrd (VLESS)
-  type: vless
-  server: prep.wwwinternetvideo.click
-  port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  udp: true
-  network: tcp
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-- name: (20) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  network: ws
-  tls: true
-  servername: fi1.merky.one
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
-- name: (21) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  type: vless
-  server: 104.36.69.180
-  port: 443
-  uuid: 1e5dc1cb-fda6-4152-b1bf-52ff7570c160
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QhEh_RgwlY-eLMAF3HmH0F8_MtYqvV1CnRxuvjDuInw
-    short-id: 8f4a9d2c1e6b3f50
 proxy-groups:
 - name: TOP
   type: select
@@ -278,24 +143,14 @@ proxy-groups:
   - (01) -  t.me/rjsxrd (VMESS)
   - (02) -  t.me/rjsxrd (VMESS)
   - (03) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (04) - 俄罗斯联邦_102117190 t.me/rjsxrd (VLESS)
+  - (04) - 🇺🇸_美国_32 t.me/rjsxrd (VLESS)
   - (05) -  t.me/rjsxrd (VMESS)
-  - (06) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  - (07) - 巴西_102117092 t.me/rjsxrd (VLESS)
+  - (06) -  t.me/rjsxrd (VMESS)
+  - (07) - 巴西_102122090 t.me/rjsxrd (VLESS)
   - (08) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (09) - 捷克_102117032 t.me/rjsxrd (VLESS)
-  - (10) - 德国_102117039 t.me/rjsxrd (VLESS)
-  - (11) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
-  - (12) - 🇷🇺_俄罗斯_112 t.me/rjsxrd (VLESS)
-  - (13) -  t.me/rjsxrd (VMESS)
-  - (14) -  t.me/rjsxrd (VMESS)
-  - (15) - 🇭🇰 香港 | HKG t.me/rjsxrd (VLESS)
-  - (16) - 🇨🇿_捷克_55 t.me/rjsxrd (VLESS)
-  - (17) - 保加利亚_102117028 t.me/rjsxrd (VLESS)
-  - '(18) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
-  - (19) - 🇺🇸_美国_120 t.me/rjsxrd (VLESS)
-  - (20) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  - (21) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+  - (09) - CF中转_1021223165 t.me/rjsxrd (VLESS)
+  - (10) - 🇷🇺_俄罗斯_122 t.me/rjsxrd (VLESS)
+  - (11) - 保加利亚_102122028 t.me/rjsxrd (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
