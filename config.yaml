@@ -14,21 +14,7 @@ proxies:
     path: /usserver
     headers:
       Host: uspanel.unixzone.us
-- name: (02) - 🇺🇸_美国_22 t.me/rjsxrd (VLESS)
-  type: vless
-  server: 38.145.220.58
-  port: 2093
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: 8a9725533854a7e8
-- name: (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -42,21 +28,30 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (04) - 🇵🇱_波兰_9 t.me/rjsxrd (VLESS)
+- name: (03) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: '(04) - 🇨🇭 Switzerland | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
   type: vless
-  server: 144.31.0.140
+  server: 45.90.59.15
   port: 443
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
   udp: true
   network: tcp
   tls: true
-  servername: api.sakhalin.fyi
-  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-- name: (05) - 🏳️_未知_149 t.me/rjsxrd (VLESS)
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+- name: (05) - 🏳️_未知_150 t.me/rjsxrd (VLESS)
   type: vless
   server: 903.rtgpu.com
   port: 443
@@ -64,21 +59,18 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: 903.rtgpu.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   ws-opts:
     path: /nmd2
-    headers:
-      Host: 903.rtgpu.com
 proxy-groups:
 - name: TOP
   type: select
   proxies:
   - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (02) - 🇺🇸_美国_22 t.me/rjsxrd (VLESS)
-  - (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (04) - 🇵🇱_波兰_9 t.me/rjsxrd (VLESS)
-  - (05) - 🏳️_未知_149 t.me/rjsxrd (VLESS)
+  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (03) -  t.me/rjsxrd (VMESS)
+  - '(04) - 🇨🇭 Switzerland | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  - (05) - 🏳️_未知_150 t.me/rjsxrd (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
