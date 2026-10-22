@@ -5,31 +5,14 @@ log-level: info
 proxies:
 - name: (01) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 104.21.7.133
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: (02) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 172.67.187.145
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: (03) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  network: tcp
+- name: (02) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   type: vless
   server: 69.48.201.136
   port: 30016
@@ -40,6 +23,15 @@ proxies:
     path: /usserver
     headers:
       Host: uspanel.unixzone.us
+- name: (03) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: (04) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: 104.17.147.222
@@ -53,82 +45,55 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: '(05) - 🇺🇸 United States | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 167.17.69.171
-  port: 443
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-- name: '(06) - 🇺🇸 United States | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 47.251.108.158
-  port: 443
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-- name: (07) -  t.me/rjsxrd (VMESS)
+- name: (05) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: Rib9JXAYoqjGN2KW.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  server: 104.21.7.133
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   udp: true
   network: ws
-  tls: true
-  servername: Rib9JXAYoqjGN2KW.v.3dns.vip
   ws-opts:
-    path: /ws-vmess
+    path: /ws?ed=2048
     headers:
-      Host: Rib9JXAYoqjGN2KW.v.3dns.vip
+      Host: vmess.lbw666.dpdns.org
+- name: (06) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: (07) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: cf.0sm.com
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 - name: (08) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
   alterId: 0
   cipher: auto
   udp: true
   network: tcp
 - name: (09) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (10) - 🇳🇱 (VLESS)
-  type: vless
-  server: 51.158.206.20
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (11) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: 168.113.215.6
   port: 33736
@@ -139,7 +104,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess-ws
-- name: (12) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+- name: (10) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -153,172 +118,76 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (13) - 🇫🇷 机场推荐:dafei.de 法国 02 t.me/rjsxrd (VLESS)
+- name: (11) - CF中转_1022062250 t.me/rjsxrd (VLESS)
   type: vless
-  server: edge.bookmai.com
-  port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  udp: true
-  network: tcp
-  tls: true
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: (14) - 🇳🇱 (VLESS)
-  type: vless
-  server: uk1-2.998998.best
+  server: 188.114.97.6
   port: 443
   uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   udp: true
   network: ws
   tls: true
   servername: server13.9966338.xyz
+  client-fingerprint: chrome
   ws-opts:
     path: /resiouhgggggggggg?ed=2560fp=chrome
     headers:
       Host: server13.9966338.xyz
-- name: (15) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (16) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (17) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: '(18) - 🇸🇬 Singapore | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+- name: (12) - 🇷🇺_俄罗斯_122 t.me/rjsxrd (VLESS)
   type: vless
-  server: 206.206.76.75
-  port: 443
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  server: 144.48.11.97
+  port: 43000
+  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
   udp: true
   network: tcp
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  servername: 144.48.11.97
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-- name: (19) - 🇨🇭 (VLESS)
+    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
+    short-id: 725e6ea0
+- name: (13) - 🇩🇪 Germany | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 147.45.46.148
+  port: 443
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
   udp: true
   network: tcp
   tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-- name: (20) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (21) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
-  type: vless
-  server: 9.247.34.118
-  port: 2053
-  uuid: fbbfebf3-dfc9-49cb-b5e5-06c99ef3d504
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.rutube.ru
+  servername: de.ozon.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 1kaGIHz5N3-UTemrcJIP6vGD6aEbTcAmxedDv2VTcSA
-    short-id: c46d735d6444850f
-- name: (22) -  t.me/rjsxrd (VMESS)
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: (14) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 146.56.112.110
-  port: 8888
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: '(23) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-    short-id: 0e
-- name: (24) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
+    path: ''
 proxy-groups:
 - name: TOP
   type: select
   proxies:
   - (01) -  t.me/rjsxrd (VMESS)
-  - (02) -  t.me/rjsxrd (VMESS)
-  - (03) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (02) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (03) -  t.me/rjsxrd (VMESS)
   - (04) -  t.me/rjsxrd (VMESS)
-  - '(05) - 🇺🇸 United States | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
-  - '(06) - 🇺🇸 United States | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  - (05) -  t.me/rjsxrd (VMESS)
+  - (06) -  t.me/rjsxrd (VMESS)
   - (07) -  t.me/rjsxrd (VMESS)
   - (08) -  t.me/rjsxrd (VMESS)
   - (09) -  t.me/rjsxrd (VMESS)
-  - (10) - 🇳🇱 (VLESS)
-  - (11) -  t.me/rjsxrd (VMESS)
-  - (12) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (13) - 🇫🇷 机场推荐:dafei.de 法国 02 t.me/rjsxrd (VLESS)
-  - (14) - 🇳🇱 (VLESS)
-  - (15) -  t.me/rjsxrd (VMESS)
-  - (16) -  t.me/rjsxrd (VMESS)
-  - (17) -  t.me/rjsxrd (VMESS)
-  - '(18) - 🇸🇬 Singapore | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
-  - (19) - 🇨🇭 (VLESS)
-  - (20) -  t.me/rjsxrd (VMESS)
-  - (21) - 🇳🇱 The Netherlands | [SNI-RU] www.rutube.ru (VLESS)
-  - (22) -  t.me/rjsxrd (VMESS)
-  - '(23) - 🇦🇲 Armenia — #108 t.me/rjsxrd (VLESS)'
-  - (24) -  t.me/rjsxrd (VMESS)
+  - (10) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (11) - CF中转_1022062250 t.me/rjsxrd (VLESS)
+  - (12) - 🇷🇺_俄罗斯_122 t.me/rjsxrd (VLESS)
+  - (13) - 🇩🇪 Germany | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
+  - (14) -  t.me/rjsxrd (VMESS)
   - DIRECT
 rules:
 - MATCH,TOP
