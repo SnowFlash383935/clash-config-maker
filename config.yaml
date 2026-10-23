@@ -3,18 +3,34 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+- name: (01) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
   type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  server: 69.42.222.165
+  port: 443
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
   udp: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  network: tcp
+  tls: true
+  servername: api.moscowvibe.fyi
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ST900c3lnBenLZfgTP95GPCXNm2dOpwQ7R5WShAKjSs
+    short-id: 7271129440ade8fa
+- name: '(02) - 🇺🇸 United States — #687 t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+- name: (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -28,57 +44,25 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (03) - 🇯🇵_日本_14 t.me/rjsxrd (VLESS)
+- name: (04) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.lamer.com.sg
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-- name: (04) - 🇯🇵_日本_13 t.me/rjsxrd (VLESS)
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 35544
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  tls: true
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
-    short-id: 25c79e5856c7
-- name: (05) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
   udp: true
   network: ws
-  tls: true
-  servername: fi1.merky.one
-  client-fingerprint: unsafe
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /usserver
     headers:
-      Host: fi1.merky.one
+      Host: uspanel.unixzone.us
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (03) - 🇯🇵_日本_14 t.me/rjsxrd (VLESS)
-  - (04) - 🇯🇵_日本_13 t.me/rjsxrd (VLESS)
-  - (05) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+  - (01) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+  - '(02) - 🇺🇸 United States — #687 t.me/rjsxrd (VLESS)'
+  - (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (04) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
