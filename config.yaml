@@ -3,7 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+- name: (01) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (02) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   type: vless
   server: 69.48.201.136
   port: 30016
@@ -14,7 +23,7 @@ proxies:
     path: /usserver
     headers:
       Host: uspanel.unixzone.us
-- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+- name: (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -28,21 +37,21 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (03) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
+- name: (04) - 🇪🇪 爱沙尼亚 | EST t.me/rjsxrd (VLESS)
   type: vless
-  server: es.srv.dvzh.net
+  server: l415ng0o.himoy.space
   port: 443
-  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
+  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
   udp: true
   network: tcp
   tls: true
-  servername: es.srv.dvzh.net
+  servername: l415ng0o.himoy.space
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e0ccc8c2f487d913
-- name: (04) -  t.me/rjsxrd (VMESS)
+    public-key: JOoD5ze_pwrMnQoAIRVieQM8SPJjiLJEw1fwx57iYgk
+    short-id: bbd20b213341644c
+- name: (05) -  t.me/rjsxrd t.me/rjsxrd (VMESS)
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -52,14 +61,74 @@ proxies:
   udp: true
   network: tcp
   tls: true
+- name: '(06) - 🇺🇸 United States | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+- name: (07) - 🇸🇬SG_65|600KB/s|F003-260618 [3d18f0c6de7c] t.me/rjsxrd (VLESS)
+  type: vless
+  server: sg.fasti.win
+  port: 443
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  udp: true
+  network: tcp
+  tls: true
+  servername: sg.fasti.win
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+- name: '(08) - 🇷🇺 Russian Federation | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  udp: true
+  network: tcp
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+- name: '(09) - 🇫🇮 Finland | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  type: vless
+  server: staging.lastilhame.monster
+  port: 443
+  uuid: 317bc783-340f-453c-afb5-b6bf637c0b23
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: fc994ae7eb10
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (03) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
-  - (04) -  t.me/rjsxrd (VMESS)
+  - (01) -  t.me/rjsxrd (VMESS)
+  - (02) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (04) - 🇪🇪 爱沙尼亚 | EST t.me/rjsxrd (VLESS)
+  - (05) -  t.me/rjsxrd t.me/rjsxrd (VMESS)
+  - '(06) - 🇺🇸 United States | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  - (07) - 🇸🇬SG_65|600KB/s|F003-260618 [3d18f0c6de7c] t.me/rjsxrd (VLESS)
+  - '(08) - 🇷🇺 Russian Federation | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  - '(09) - 🇫🇮 Finland | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
   - DIRECT
 rules:
 - MATCH,TOP
