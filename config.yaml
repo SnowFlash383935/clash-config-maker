@@ -3,34 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
   type: vless
-  server: 69.42.222.165
-  port: 443
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
   udp: true
-  network: tcp
-  tls: true
-  servername: api.moscowvibe.fyi
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ST900c3lnBenLZfgTP95GPCXNm2dOpwQ7R5WShAKjSs
-    short-id: 7271129440ade8fa
-- name: '(02) - 🇺🇸 United States — #687 t.me/rjsxrd (VLESS)'
-  type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-- name: (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -44,25 +28,38 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (04) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+- name: (03) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
   type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  server: es.srv.dvzh.net
+  port: 443
+  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
   udp: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
+  network: tcp
+  tls: true
+  servername: es.srv.dvzh.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e0ccc8c2f487d913
+- name: (04) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  - '(02) - 🇺🇸 United States — #687 t.me/rjsxrd (VLESS)'
-  - (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (04) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (03) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
+  - (04) -  t.me/rjsxrd (VMESS)
   - DIRECT
 rules:
 - MATCH,TOP
