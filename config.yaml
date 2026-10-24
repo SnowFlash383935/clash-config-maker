@@ -3,7 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -17,7 +28,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (02) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
+- name: (03) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
   type: vless
   server: es.srv.dvzh.net
   port: 443
@@ -31,21 +42,50 @@ proxies:
   reality-opts:
     public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
     short-id: e0ccc8c2f487d913
-- name: (03) - 🇸🇬_新加坡_32 t.me/rjsxrd (VLESS)
+- name: (04) - 🇳🇱 The Netherlands [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
+  type: vless
+  server: vd2.outlinevpn.cc
+  port: 12213
+  uuid: 7c464358-6c89-4623-bd20-7c7bcd51bc55
+  udp: true
+  network: tcp
+  tls: true
+  servername: music.yandex.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
+    short-id: 6a29a03b21
+- name: (05) - 🇫🇮 Finland [*CIDR] t.me/rjsxrd (VLESS)
+  type: vless
+  server: 36a466g.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  network: grpc
+  tls: true
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: safari
+  reality-opts:
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
+- name: (06) - 🇸🇬_新加坡_31 t.me/rjsxrd (VLESS)
   type: vless
   server: funagfrdfs.alixxplay.com
-  port: 46105
+  port: 55688
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
   network: tcp
   tls: true
-  servername: www.lamer.com.sg
-  client-fingerprint: safari
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-- name: (04) - 🇺🇸_美国_20 t.me/rjsxrd (VLESS)
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+- name: (07) - 🇺🇸_美国_20 t.me/rjsxrd (VLESS)
   type: vless
   server: 67.159.46.132
   port: 2093
@@ -63,10 +103,13 @@ proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (02) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
-  - (03) - 🇸🇬_新加坡_32 t.me/rjsxrd (VLESS)
-  - (04) - 🇺🇸_美国_20 t.me/rjsxrd (VLESS)
+  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (03) - 🇮🇱_以色列_18 t.me/rjsxrd (VLESS)
+  - (04) - 🇳🇱 The Netherlands [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
+  - (05) - 🇫🇮 Finland [*CIDR] t.me/rjsxrd (VLESS)
+  - (06) - 🇸🇬_新加坡_31 t.me/rjsxrd (VLESS)
+  - (07) - 🇺🇸_美国_20 t.me/rjsxrd (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
