@@ -3,30 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+- name: '(01) - 🇺🇸 United States — #687 t.me/rjsxrd (VLESS)'
   type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  udp: true
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: (02) - 🇷🇺 Russia | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)
-  type: vless
-  server: 201.24.121.243
+  server: 47.253.226.114
   port: 443
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: kk-ru24a1.testkknegr.online
-  client-fingerprint: safari
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+- name: (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
   type: vless
   server: 51.158.206.98
   port: 23576
@@ -40,46 +30,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (04) - 🇷🇺 Russia | [*CIDR] t.me/rjsxrd (VLESS)
-  type: vless
-  server: 147.45.47.104
-  port: 443
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  udp: true
-  network: tcp
-  tls: true
-  servername: ozon.ru
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: (05) - 🇫🇷 France | [SNI-RU] ozon.ru t.me/rjsxrd (VLESS)
-  type: vless
-  server: 103.91.147.240
-  port: 443
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  udp: true
-  network: tcp
-  tls: true
-  servername: ozon.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: (06) - 🇷🇺 Russia [*CIDR] t.me/rjsxrd (VLESS)
-  type: vless
-  server: 45.9.118.207
-  port: 443
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  udp: true
-  network: tcp
-  tls: true
-  servername: ozon.ru
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: (07) - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
+- name: (03) - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
   type: vless
   server: 5.129.235.234
   port: 12213
@@ -93,33 +44,7 @@ proxies:
   reality-opts:
     public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
     short-id: 6a29a03b21
-- name: (08) - 🇷🇺 Russia | [*CIDR] t.me/rjsxrd (VLESS)
-  type: vless
-  server: 193.223.104.120
-  port: 443
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  udp: true
-  network: tcp
-  tls: true
-  servername: ozon.ru
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: (09) - 🇷🇺 Russia | [*CIDR] t.me/rjsxrd (VLESS)
-  type: vless
-  server: 113.30.154.246
-  port: 443
-  uuid: 0b6a937e-5b0e-49ca-b31e-f03f290e97cf
-  udp: true
-  network: tcp
-  tls: true
-  servername: ozon.ru
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: (10) - 🇳🇱 The Netherlands [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
+- name: (04) - 🇳🇱 The Netherlands [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
   type: vless
   server: vd2.outlinevpn.cc
   port: 12213
@@ -133,7 +58,17 @@ proxies:
   reality-opts:
     public-key: kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI
     short-id: 6a29a03b21
-- name: (11) - 🇪🇪_爱沙尼亚_34 t.me/rjsxrd (VLESS)
+- name: (05) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+- name: (06) - 🇪🇪_爱沙尼亚_34 t.me/rjsxrd (VLESS)
   type: vless
   server: ee1.mycloud1.org
   port: 443
@@ -147,7 +82,31 @@ proxies:
   reality-opts:
     public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
     short-id: afee962d
-- name: (12) - 🇳🇱_荷兰_36 t.me/rjsxrd (VLESS)
+- name: (07) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  type: vless
+  server: 69.48.201.136
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: (08) - 🇫🇷 France [SNI-RU] ozon.ru t.me/rjsxrd (VLESS)
+  type: vless
+  server: 103.91.147.239
+  port: 443
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  udp: true
+  network: tcp
+  tls: true
+  servername: ozon.ru
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: (09) - 🇳🇱_荷兰_36 t.me/rjsxrd (VLESS)
   type: vless
   server: 138.124.79.6
   port: 443
@@ -165,18 +124,15 @@ proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
-  - (02) - 🇷🇺 Russia | 🌐 | [*CIDR] t.me/rjsxrd (VLESS)
-  - (03) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
-  - (04) - 🇷🇺 Russia | [*CIDR] t.me/rjsxrd (VLESS)
-  - (05) - 🇫🇷 France | [SNI-RU] ozon.ru t.me/rjsxrd (VLESS)
-  - (06) - 🇷🇺 Russia [*CIDR] t.me/rjsxrd (VLESS)
-  - (07) - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
-  - (08) - 🇷🇺 Russia | [*CIDR] t.me/rjsxrd (VLESS)
-  - (09) - 🇷🇺 Russia | [*CIDR] t.me/rjsxrd (VLESS)
-  - (10) - 🇳🇱 The Netherlands [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
-  - (11) - 🇪🇪_爱沙尼亚_34 t.me/rjsxrd (VLESS)
-  - (12) - 🇳🇱_荷兰_36 t.me/rjsxrd (VLESS)
+  - '(01) - 🇺🇸 United States — #687 t.me/rjsxrd (VLESS)'
+  - (02) - surfboardv2ray  VL-TCP-  XX 96ms (VLESS)
+  - (03) - 🇳🇱 The Netherlands | [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
+  - (04) - 🇳🇱 The Netherlands [SNI-RU] music.yandex.ru t.me/rjsxrd (VLESS)
+  - (05) -  t.me/rjsxrd (VMESS)
+  - (06) - 🇪🇪_爱沙尼亚_34 t.me/rjsxrd (VLESS)
+  - (07) - surfboardv2ray  VL-WS-N/A  XX 29ms (VLESS)
+  - (08) - 🇫🇷 France [SNI-RU] ozon.ru t.me/rjsxrd (VLESS)
+  - (09) - 🇳🇱_荷兰_36 t.me/rjsxrd (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
