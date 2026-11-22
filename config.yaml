@@ -3,37 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: (01) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 172.67.190.164
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: guanwang.awsno.com
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: (02) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 104.18.42.163
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: guanwang.awsno.com
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: (03) - [OpenRay] 🇺🇸US-1837 (VLESS)
+- name: (01) - [OpenRay] 🇺🇸US-1837 (VLESS)
   type: vless
   server: 15.204.97.209
   port: 23576
@@ -46,7 +16,7 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-- name: (04) - [OpenRay] 🇺🇸US-988 (VLESS)
+- name: (02) - [OpenRay] 🇺🇸US-988 (VLESS)
   type: vless
   server: 15.204.97.216
   port: 23576
@@ -59,22 +29,7 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-- name: (05) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  servername: guanwang.awsno.com
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: (06) - [OpenRay] 🇺🇸US-1656 (VLESS)
+- name: (03) - [OpenRay] 🇺🇸US-1656 (VLESS)
   type: vless
   server: 15.204.97.195
   port: 23576
@@ -88,23 +43,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: (07) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: (08) - [OpenRay] 🇿🇦ZA-11 (SS)
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: (09) -  t.me/rjsxrd (VMESS)
+- name: (04) -  t.me/rjsxrd (VMESS)
   type: vmess
   server: 188.114.99.137
   port: 443
@@ -119,67 +58,46 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: (10) -  t.me/rjsxrd (VMESS)
+- name: (05) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 167.88.63.47
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: xmfhlpy.com
-- name: (11) - [OpenRay] 🇺🇸US-781 (VMESS)
+  servername: guanwang.awsno.com
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: (06) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 172.111.38.246
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-  tls: true
-  servername: xmfhlpy.com
-- name: (12) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 38.91.107.84
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-  tls: true
-  servername: xmfhlpy.com
-- name: (13) -  t.me/rjsxrd (VMESS)
-  type: vmess
-  server: 67.220.95.3
+  server: 169.197.142.22
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   network: tcp
-- name: (14) - [OpenRay] 🇺🇸US-30 (SS)
-  type: ss
-  server: 193.151.163.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: (15) -  t.me/rjsxrd (VMESS)
+- name: (07) -  t.me/rjsxrd (VMESS)
   type: vmess
-  server: 67.220.74.250
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 104.18.42.163
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: xmfhlpy.com
-- name: (16) - [OpenRay] 🇺🇸US-1900 (VLESS)
+  servername: guanwang.awsno.com
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: (08) - [OpenRay] 🇺🇸US-1900 (VLESS)
   type: vless
   server: 169.40.42.229
   port: 443
@@ -193,7 +111,25 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: (17) - [OpenRay] 🇺🇸US-1121 (VLESS)
+- name: (09) - [OpenRay] 🇺🇸US-30 (SS)
+  type: ss
+  server: 193.151.163.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: (10) - [OpenRay] 🇺🇸US-781 (VMESS)
+  type: vmess
+  server: 172.111.38.246
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  servername: xmfhlpy.com
+- name: (11) - [OpenRay] 🇺🇸US-1121 (VLESS)
   type: vless
   server: 169.40.42.74
   port: 443
@@ -207,7 +143,145 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: (18) - [OpenRay] 🇳🇱NL-28 (VLESS)
+- name: (12) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 167.88.63.47
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  servername: xmfhlpy.com
+- name: (13) - [OpenRay] 🇷🇺RU-100 (VLESS)
+  type: vless
+  server: 45.138.100.248
+  port: 14430
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.138.100.248
+- name: '(14) - 🇺🇸 United States — #688 t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 159.89.87.21
+  port: 28190
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  udp: true
+  network: tcp
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+- name: (15) - [OpenRay] 🇿🇦ZA-11 (SS)
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: (16) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 38.91.107.84
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  servername: xmfhlpy.com
+- name: (17) - 🇺🇸 (VLESS)
+  type: vless
+  server: 23.237.202.254
+  port: 443
+  uuid: e9958027-03be-4eb5-bcec-70415b2e4844
+  udp: true
+  network: xhttp
+  tls: true
+  servername: id-e9958027.vmagnum.win
+  client-fingerprint: firefox
+- name: (18) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 67.220.74.250
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  servername: xmfhlpy.com
+- name: (19) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: (20) - 🇫🇮 (VLESS)
+  type: vless
+  server: 45.144.52.205
+  port: 4243
+  uuid: 78a2cdf1-22e5-4ad7-bf89-91aa13d8b76c
+  udp: true
+  network: grpc
+  tls: true
+  servername: fi.convert-cloud.guru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: vCHucdoD_m-TKVHS7si1akKgP6r4dvTLUX8y1TTZQG4
+  grpc-opts:
+    grpc-service-name: ns
+- name: (21) -  t.me/rjsxrd (VMESS)
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: guanwang.awsno.com
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: (22) - [OpenRay] 🌐XX-574 (VMESS)
+  type: vmess
+  server: 104.27.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: (23) - [OpenRay] 🇰🇷KR-27 (VLESS)
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: (24) - [OpenRay] 🇳🇱NL-28 (VLESS)
   type: vless
   server: 51.158.206.96
   port: 23576
@@ -220,385 +294,37 @@ proxies:
   flow: xtls-rprx-vision
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-- name: (19) - [OpenRay] 🇳🇱NL-172 (VLESS)
+- name: (25) - 🇳🇱 The Netherlands (сервер) | 🇷🇺 Russia (выход 89.208.222.49) | БЕЛЫЙ
+    IP | @RaViraNet t.me/rjsxrd (VLESS)
   type: vless
-  server: 51.158.206.29
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: (20) - [OpenRay] 🇰🇷KR-27 (VLESS)
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: (21) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  type: vless
-  server: 31.59.154.82
-  port: 8459
-  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
-  udp: true
-  network: tcp
-  tls: true
-  servername: nl-edge.airlinesvpn.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
-    short-id: 0f0e381ec0c4690d
-- name: (22) - 🇫🇮 Finland (сервер) | 🌐 Выход не определён | @RaViraNet t.me/rjsxrd
-    (VLESS)
-  type: vless
-  server: 141.227.170.220
-  port: 8443
-  uuid: 6c077993-952c-4318-9e93-89056a207a9b
-  udp: true
-  network: tcp
-  tls: true
-  servername: apple.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: (23) - 🇩🇪 (VLESS)
-  type: vless
-  server: 2.28.45.87
-  port: 3939
-  uuid: 6c49810a-e6e7-4948-8061-6f6243b0124d
-  udp: true
-  network: tcp
-  tls: true
-  servername: ai.android
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
-    short-id: d9a2600fdecd7be2
-- name: (24) - [499ms (VLESS)
-  type: vless
-  server: xsru1.ddnsfree.com
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  server: 78.159.245.147
+  port: 445
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
   udp: true
   network: grpc
   tls: true
-  servername: xsru1.ddnsfree.com
+  servername: passport.yandex.ru
   client-fingerprint: ios
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
   grpc-opts:
-    grpc-service-name: grpc-ru
-- name: (25) - 🇳🇱 (VLESS)
+    grpc-service-name: grpc
+- name: (26) - 🇳🇱 The Netherlands (сервер) | 🇩🇪 Germany (выход 64.188.91.39) | @RaViraNet
+    t.me/rjsxrd (VLESS)
   type: vless
-  server: 195.133.93.227
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  server: 195.63.128.21
+  port: 2443
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
   udp: true
   network: tcp
   tls: true
-  servername: storage.yandexcloud.net
+  servername: germany.cloudhouse1.ru
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (26) - 🇳🇱 The Netherlands (сервер) | 🇳🇱 The Netherlands (выход 2a03:6f02::1:68c8)
-    | @RaViraNet t.me/rjsxrd (VLESS)
-  type: vless
-  server: ams2.shtil.io
-  port: 444
-  uuid: 254f28cb-d0c1-41e9-a06b-f2155213ff04
-  udp: true
-  network: tcp
-  tls: true
-  servername: ams2.shtil.io
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: (27) - 🇵🇱 (VLESS)
-  type: vless
-  server: 144.31.5.94
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  network: ws
-  tls: true
-  servername: alphafooter.newbuzideas.org
-  client-fingerprint: firefox
-  ws-opts:
-    path: /media/ws/
-- name: (28) - 🇳🇱 (VLESS)
-  type: vless
-  server: 212.192.3.113
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (29) - 🇳🇱 (VLESS)
-  type: vless
-  server: 195.133.93.179
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (30) - [OpenRay] 🇩🇪DE-29 (VLESS)
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: (31) - 🇩🇪 (VLESS)
-  type: vless
-  server: 191.217.215.228
-  port: 2096
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  udp: true
-  network: ws
-  tls: true
-  servername: st3b6e5.rumedia-cdn.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st3b6e5.rumedia-cdn.com
-- name: (32) - [559ms (VLESS)
-  type: vless
-  server: xssite.webredirect.org
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  udp: true
-  network: grpc
-  tls: true
-  servername: xssite.webredirect.org
-  client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: (33) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.40.224
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (34) - [OpenRay] 🌐XX-151 (VLESS)
-  type: vless
-  server: sg.fasti.win
-  port: 443
-  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
-  udp: true
-  network: tcp
-  tls: true
-  servername: sg.fasti.win
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
-    short-id: feedbacc
-- name: (35) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.43.82
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (36) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.41.14
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (37) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.40.91
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (38) - 🇳🇱 (VLESS)
-  type: vless
-  server: 212.192.3.237
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (39) - 🇳🇱 (VLESS)
-  type: vless
-  server: 132.243.242.246
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (40) - 🇸🇪 (VLESS)
-  type: vless
-  server: 77.232.143.142
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  network: ws
-  tls: true
-  servername: volumestyle.komediyatorg.net
-  client-fingerprint: firefox
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: volumestyle.komediyatorg.net
-- name: (41) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.42.138
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (42) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.43.70
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (43) - 🇩🇪 (VLESS)
-  type: vless
-  server: 146.103.40.173
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (44) - 🇵🇱 (VLESS)
-  type: vless
-  server: 144.31.5.137
-  port: 443
-  uuid: 78a2cdf1-22e5-4ad7-bf89-91aa13d8b76c
-  udp: true
-  network: tcp
-  tls: true
-  servername: se.dataroute.biz
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Jg9VG2d5YKA_b6b2oVT8_QaIEHyww04U050ahEPhZlU
-- name: (45) - 🇳🇱 (VLESS)
-  type: vless
-  server: 132.243.242.244
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (46) - 🇳🇱 (VLESS)
-  type: vless
-  server: 132.243.242.40
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  network: tcp
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (47) - [OpenRay] 🇵🇱PL-13 (VLESS)
+    public-key: q_MJ5Zo2vcnePWq3KY653QUPX8mNSvapLpqXU4NuPho
+    short-id: 464db718e17e4107
+- name: (27) - [OpenRay] 🇵🇱PL-13 (VLESS)
   type: vless
   server: 87.199.205.28
   port: 443
@@ -612,21 +338,21 @@ proxies:
   reality-opts:
     public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
     short-id: ef1d3554c652a436
-- name: (48) - 🇩🇪 (VLESS)
+- name: (28) - [OpenRay] 🇳🇱NL-172 (VLESS)
   type: vless
-  server: 146.103.42.119
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  server: 51.158.206.29
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   network: tcp
   tls: true
-  servername: storage.yandexcloud.net
+  servername: fuck.rkn
   client-fingerprint: firefox
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-- name: (49) - 🇳🇱 (VLESS)
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: (29) - 🇳🇱 (VLESS)
   type: vless
   server: 212.192.3.222
   port: 9543
@@ -640,72 +366,336 @@ proxies:
   reality-opts:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
-- name: (50) - 🇷🇺 俄罗斯 | RUS t.me/rjsxrd (VLESS)
+- name: (30) - 🇩🇪 Germany | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
   type: vless
-  server: 176.98.176.60
+  server: cadrin.wtf
   port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
+  udp: true
+  network: grpc
+  tls: true
+  servername: cadrin.wtf
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: cache.sync.v1
+- name: (31) - 🇳🇱 The Netherlands (сервер) | 🇳🇱 The Netherlands (выход 2a03:6f02::1:68c8)
+    | @RaViraNet t.me/rjsxrd (VLESS)
+  type: vless
+  server: ams2.shtil.io
+  port: 444
+  uuid: 254f28cb-d0c1-41e9-a06b-f2155213ff04
   udp: true
   network: tcp
   tls: true
-  servername: mosaic.topp-con.xyz
+  servername: ams2.shtil.io
+  client-fingerprint: safari
+  flow: xtls-rprx-vision
+- name: (32) - [559ms (VLESS)
+  type: vless
+  server: xssite.webredirect.org
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  network: grpc
+  tls: true
+  servername: xssite.webredirect.org
+  client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: (33) - 🇳🇱 (VLESS)
+  type: vless
+  server: 132.243.242.115
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
   client-fingerprint: firefox
   flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (34) - 🇳🇱 (VLESS)
+  type: vless
+  server: 132.243.242.244
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (35) - 🇳🇱 (VLESS)
+  type: vless
+  server: 132.243.242.246
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: '(36) - 🇳🇱 Netherlands | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
+  type: vless
+  server: 146.19.254.171
+  port: 8443
+  uuid: 24fb9b5b-43b7-4058-a7e5-a0499ada1fda
+  udp: true
+  network: tcp
+  tls: true
+  servername: 146.19.254.171
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: (37) - 🇩🇪 (VLESS)
+  type: vless
+  server: 50.7.28.213
+  port: 443
+  uuid: e9958027-03be-4eb5-bcec-70415b2e4844
+  udp: true
+  network: xhttp
+  tls: true
+  servername: api-v3-e9958027.vmagnum.win
+  client-fingerprint: firefox
+- name: (38) - 🇩🇪 (VLESS)
+  type: vless
+  server: 50.7.28.213
+  port: 443
+  uuid: 8ce4ccb8-99ab-4540-a0db-f879c9933986
+  udp: true
+  network: xhttp
+  tls: true
+  servername: api-v3-8ce4ccb8.vmagnum.win
+  client-fingerprint: firefox
+- name: (39) - 🇵🇱 (VLESS)
+  type: vless
+  server: 144.31.5.137
+  port: 443
+  uuid: 78a2cdf1-22e5-4ad7-bf89-91aa13d8b76c
+  udp: true
+  network: tcp
+  tls: true
+  servername: se.dataroute.biz
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Jg9VG2d5YKA_b6b2oVT8_QaIEHyww04U050ahEPhZlU
+- name: (40) - 🇳🇱 (VLESS)
+  type: vless
+  server: 212.192.3.113
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (41) - 🇳🇱 (VLESS)
+  type: vless
+  server: 132.243.242.216
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (42) - [OpenRay] 🇳🇱NL-230 (VLESS)
+  type: vless
+  server: 188.116.27.6
+  port: 443
+  uuid: f3d543c5-f41b-46d7-85f8-d6f3ccefe280
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.sony.co.uk
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
+    short-id: '1174'
+- name: (43) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+  type: vless
+  server: 31.59.154.82
+  port: 8459
+  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
+  udp: true
+  network: tcp
+  tls: true
+  servername: nl-edge.airlinesvpn.com
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
+    short-id: 0f0e381ec0c4690d
+- name: (44) - [OpenRay] 🇩🇪DE-29 (VLESS)
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: (45) - 🇩🇪 (VLESS)
+  type: vless
+  server: 191.217.215.228
+  port: 2096
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  udp: true
+  network: ws
+  tls: true
+  servername: st3b6e5.rumedia-cdn.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st3b6e5.rumedia-cdn.com
+- name: (46) - 🇩🇪 (VLESS)
+  type: vless
+  server: 146.103.43.82
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (47) - 🇳🇱 (VLESS)
+  type: vless
+  server: 195.133.93.179
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (48) - 🇩🇪 (VLESS)
+  type: vless
+  server: 146.103.43.70
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (49) - 🇩🇪 (VLESS)
+  type: vless
+  server: 146.103.43.91
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+- name: (50) - 🇳🇱 (VLESS)
+  type: vless
+  server: 195.133.93.227
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  udp: true
+  network: tcp
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
 proxy-groups:
 - name: TOP
   type: select
   proxies:
-  - (01) -  t.me/rjsxrd (VMESS)
-  - (02) -  t.me/rjsxrd (VMESS)
-  - (03) - [OpenRay] 🇺🇸US-1837 (VLESS)
-  - (04) - [OpenRay] 🇺🇸US-988 (VLESS)
+  - (01) - [OpenRay] 🇺🇸US-1837 (VLESS)
+  - (02) - [OpenRay] 🇺🇸US-988 (VLESS)
+  - (03) - [OpenRay] 🇺🇸US-1656 (VLESS)
+  - (04) -  t.me/rjsxrd (VMESS)
   - (05) -  t.me/rjsxrd (VMESS)
-  - (06) - [OpenRay] 🇺🇸US-1656 (VLESS)
+  - (06) -  t.me/rjsxrd (VMESS)
   - (07) -  t.me/rjsxrd (VMESS)
-  - (08) - [OpenRay] 🇿🇦ZA-11 (SS)
-  - (09) -  t.me/rjsxrd (VMESS)
-  - (10) -  t.me/rjsxrd (VMESS)
-  - (11) - [OpenRay] 🇺🇸US-781 (VMESS)
+  - (08) - [OpenRay] 🇺🇸US-1900 (VLESS)
+  - (09) - [OpenRay] 🇺🇸US-30 (SS)
+  - (10) - [OpenRay] 🇺🇸US-781 (VMESS)
+  - (11) - [OpenRay] 🇺🇸US-1121 (VLESS)
   - (12) -  t.me/rjsxrd (VMESS)
-  - (13) -  t.me/rjsxrd (VMESS)
-  - (14) - [OpenRay] 🇺🇸US-30 (SS)
-  - (15) -  t.me/rjsxrd (VMESS)
-  - (16) - [OpenRay] 🇺🇸US-1900 (VLESS)
-  - (17) - [OpenRay] 🇺🇸US-1121 (VLESS)
-  - (18) - [OpenRay] 🇳🇱NL-28 (VLESS)
-  - (19) - [OpenRay] 🇳🇱NL-172 (VLESS)
-  - (20) - [OpenRay] 🇰🇷KR-27 (VLESS)
-  - (21) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
-  - (22) - 🇫🇮 Finland (сервер) | 🌐 Выход не определён | @RaViraNet t.me/rjsxrd (VLESS)
-  - (23) - 🇩🇪 (VLESS)
-  - (24) - [499ms (VLESS)
-  - (25) - 🇳🇱 (VLESS)
-  - (26) - 🇳🇱 The Netherlands (сервер) | 🇳🇱 The Netherlands (выход 2a03:6f02::1:68c8)
+  - (13) - [OpenRay] 🇷🇺RU-100 (VLESS)
+  - '(14) - 🇺🇸 United States — #688 t.me/rjsxrd (VLESS)'
+  - (15) - [OpenRay] 🇿🇦ZA-11 (SS)
+  - (16) -  t.me/rjsxrd (VMESS)
+  - (17) - 🇺🇸 (VLESS)
+  - (18) -  t.me/rjsxrd (VMESS)
+  - (19) -  t.me/rjsxrd (VMESS)
+  - (20) - 🇫🇮 (VLESS)
+  - (21) -  t.me/rjsxrd (VMESS)
+  - (22) - [OpenRay] 🌐XX-574 (VMESS)
+  - (23) - [OpenRay] 🇰🇷KR-27 (VLESS)
+  - (24) - [OpenRay] 🇳🇱NL-28 (VLESS)
+  - (25) - 🇳🇱 The Netherlands (сервер) | 🇷🇺 Russia (выход 89.208.222.49) | БЕЛЫЙ IP
     | @RaViraNet t.me/rjsxrd (VLESS)
-  - (27) - 🇵🇱 (VLESS)
-  - (28) - 🇳🇱 (VLESS)
+  - (26) - 🇳🇱 The Netherlands (сервер) | 🇩🇪 Germany (выход 64.188.91.39) | @RaViraNet
+    t.me/rjsxrd (VLESS)
+  - (27) - [OpenRay] 🇵🇱PL-13 (VLESS)
+  - (28) - [OpenRay] 🇳🇱NL-172 (VLESS)
   - (29) - 🇳🇱 (VLESS)
-  - (30) - [OpenRay] 🇩🇪DE-29 (VLESS)
-  - (31) - 🇩🇪 (VLESS)
+  - (30) - 🇩🇪 Germany | 🌐 [*CIDR] t.me/rjsxrd (VLESS)
+  - (31) - 🇳🇱 The Netherlands (сервер) | 🇳🇱 The Netherlands (выход 2a03:6f02::1:68c8)
+    | @RaViraNet t.me/rjsxrd (VLESS)
   - (32) - [559ms (VLESS)
-  - (33) - 🇩🇪 (VLESS)
-  - (34) - [OpenRay] 🌐XX-151 (VLESS)
-  - (35) - 🇩🇪 (VLESS)
-  - (36) - 🇩🇪 (VLESS)
+  - (33) - 🇳🇱 (VLESS)
+  - (34) - 🇳🇱 (VLESS)
+  - (35) - 🇳🇱 (VLESS)
+  - '(36) - 🇳🇱 Netherlands | TG: @HardVpn_robot t.me/rjsxrd (VLESS)'
   - (37) - 🇩🇪 (VLESS)
-  - (38) - 🇳🇱 (VLESS)
-  - (39) - 🇳🇱 (VLESS)
-  - (40) - 🇸🇪 (VLESS)
-  - (41) - 🇩🇪 (VLESS)
-  - (42) - 🇩🇪 (VLESS)
-  - (43) - 🇩🇪 (VLESS)
-  - (44) - 🇵🇱 (VLESS)
-  - (45) - 🇳🇱 (VLESS)
-  - (46) - 🇳🇱 (VLESS)
-  - (47) - [OpenRay] 🇵🇱PL-13 (VLESS)
+  - (38) - 🇩🇪 (VLESS)
+  - (39) - 🇵🇱 (VLESS)
+  - (40) - 🇳🇱 (VLESS)
+  - (41) - 🇳🇱 (VLESS)
+  - (42) - [OpenRay] 🇳🇱NL-230 (VLESS)
+  - (43) - 🇺🇸 美国 | USA t.me/rjsxrd (VLESS)
+  - (44) - [OpenRay] 🇩🇪DE-29 (VLESS)
+  - (45) - 🇩🇪 (VLESS)
+  - (46) - 🇩🇪 (VLESS)
+  - (47) - 🇳🇱 (VLESS)
   - (48) - 🇩🇪 (VLESS)
-  - (49) - 🇳🇱 (VLESS)
-  - (50) - 🇷🇺 俄罗斯 | RUS t.me/rjsxrd (VLESS)
+  - (49) - 🇩🇪 (VLESS)
+  - (50) - 🇳🇱 (VLESS)
   - DIRECT
 rules:
 - MATCH,TOP
